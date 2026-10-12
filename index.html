@@ -1023,6 +1023,7 @@ Global technology leader with **25+ years** of experience in enabling business t
         linkedin_label: '',
         github: '',
         github_label: '',
+
         pdf: 'Meera-Shanaaz-Aneez-CV.pdf',
         strip: []
       };
@@ -1083,6 +1084,7 @@ Global technology leader with **25+ years** of experience in enabling business t
         (meta.email ? '        <li><span aria-hidden="true">✉</span><a href="mailto:' + meta.email + '">' + meta.email + '</a></li>\n' : '') +
         (meta.phone ? '        <li><span aria-hidden="true">☏</span><a href="tel:' + meta.phone.replace(/[\s-]/g, '') + '">' + meta.phone + '</a></li>\n' : '') +
         (meta.linkedin ? '        <li><span aria-hidden="true">in</span><a href="' + meta.linkedin + '" rel="noopener" target="_blank">' + (meta.linkedin_label || meta.linkedin.replace(/^https?:\/\/(www\.)?/, '')) + '</a></li>\n' : '') +
+        (meta.github ? '        <li><span aria-hidden="true"></span><a href="' + meta.github + '" rel="noopener" target="_blank">' + (meta.github_label || meta.github.replace(/^https?:\/\/(www\.)?/, '')) + '</a></li>\n' : '') +
         '      </ul>\n' +
         (meta.pdf ? '      <a class="dl" id="dl-pdf" href="' + meta.pdf + '" download="' + meta.pdf + '">&#8681; Download CV (PDF)</a>\n' : '') +
         '    </div>\n' +
