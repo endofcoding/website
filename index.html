@@ -1,1 +1,464 @@
-CV
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meera Shanaaz Aneez — Technology Leader</title>
+<meta name="description" content="Global technology leader with 20+ years of experience in technology transformation, strategy and architecture, software delivery and building high performing teams.">
+<meta name="theme-color" content="#14313a">
+<style>
+:root{
+  --bg:#f7f5f0; --surface:#ffffff; --ink:#1b2427; --muted:#5b676b; --line:#e2ded4;
+  --accent:#14565f; --accent-soft:#e3eeee; --warm:#b4691f; --strip:#14313a; --strip-ink:#f3efe6;
+  --shadow:0 1px 2px rgba(20,49,58,.06),0 6px 20px rgba(20,49,58,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10171a; --surface:#172126; --ink:#e8ecec; --muted:#9aa8ac; --line:#26343a;
+    --accent:#6cc0c8; --accent-soft:#1c2f35; --warm:#e0a15f; --strip:#0b1114; --strip-ink:#e8ecec;
+    --shadow:none}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px}
+a:hover{color:var(--warm)}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;line-height:1.2;margin:0}
+
+/* header */
+header{padding:56px 0 36px}
+.hero{display:grid;grid-template-columns:132px 1fr;gap:28px;align-items:center}
+.hero img{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 20%;
+  border:4px solid var(--surface);box-shadow:var(--shadow)}
+h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.01em}
+.role{margin:6px 0 16px;color:var(--warm);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+.contact{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0;padding:0;list-style:none;font-size:.95rem}
+.contact a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.contact a:hover{color:var(--accent);border-color:var(--accent)}
+.contact span{color:var(--muted);margin-right:6px}
+
+.strip{background:var(--strip);color:var(--strip-ink)}
+.strip ul{list-style:none;margin:0;padding:14px 0;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center;font-size:.85rem;font-weight:500}
+
+.summary{font-size:1.15rem;max-width:760px;margin:40px 0 8px;color:var(--ink)}
+.summary b{color:var(--accent)}
+
+/* sections */
+section{padding:36px 0 8px}
+.sec-title{display:flex;align-items:center;gap:16px;font-size:1.5rem;margin-bottom:22px}
+.sec-title::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* highlights */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
+.card h3{font-size:1.1rem;color:var(--accent);margin-bottom:10px}
+.card.wide{grid-column:1/-1}
+ul.tick{margin:0;padding-left:1.1em}
+ul.tick li{margin:6px 0}
+ul.tick li::marker{color:var(--warm)}
+.card.wide ul{columns:1}
+@media(min-width:700px){.card.wide ul{columns:2;column-gap:36px}.card.wide li{break-inside:avoid}}
+
+/* experience */
+.job{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;box-shadow:var(--shadow);overflow:hidden}
+.job summary{list-style:none;cursor:pointer;padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:baseline}
+.job summary::-webkit-details-marker{display:none}
+.job summary:hover{background:var(--accent-soft)}
+.job summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.job .co{font-family:Georgia,serif;font-size:1.2rem;font-weight:700}
+.job .when{color:var(--muted);font-size:.9rem;white-space:nowrap}
+.job .title{grid-column:1/-1;color:var(--accent);font-weight:600}
+.job .meta{grid-column:1/-1;color:var(--muted);font-size:.88rem}
+.job .chev{display:none}
+.job summary::after{content:"Show details";grid-column:1/-1;margin-top:6px;font-size:.8rem;color:var(--warm);font-weight:600}
+.job[open] summary::after{content:"Hide details"}
+.job .body{padding:4px 22px 22px;border-top:1px solid var(--line)}
+.job h4{margin:18px 0 6px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.job ul{margin:0;padding-left:1.1em}
+.job li{margin:4px 0}
+.job li::marker{color:var(--warm)}
+.tech{font-size:.9rem;color:var(--muted);margin-top:14px}
+.tech b{color:var(--ink)}
+
+/* education / competencies */
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.edu p{margin:0 0 14px}
+.edu small{color:var(--muted);display:block}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{background:var(--accent-soft);color:var(--ink);border-radius:999px;padding:4px 12px;font-size:.85rem}
+.comp h3{font-size:1rem;margin:0 0 10px;color:var(--accent)}
+.comp .card+.card{margin-top:0}
+
+footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+@media(max-width:600px){
+  header{padding-top:36px}
+  .hero{grid-template-columns:1fr;text-align:center;justify-items:center}
+  .contact{justify-content:center}
+  .job summary{grid-template-columns:1fr}
+  .job .when{white-space:normal}
+}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--shadow:none}
+  body{font-size:11pt}
+  .strip{background:#eee;color:#000}
+  .job .body{display:block}
+  .job summary::after{display:none}
+  section{break-inside:auto}
+  .card,.job{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hero">
+    <img src="photo.jpg" alt="Photo of Meera Shanaaz Aneez" width="132" height="132">
+    <div>
+      <h1>Meera Shanaaz Aneez</h1>
+      <p class="role">Technology Leader</p>
+      <ul class="contact">
+        <li><span aria-hidden="true">✉</span><a href="mailto:meera.aneez@gmail.com">meera.aneez@gmail.com</a></li>
+        <li><span aria-hidden="true">☏</span><a href="tel:+61432800521">+61 432 800 521</a></li>
+        <li><span aria-hidden="true">in</span><a href="https://www.linkedin.com/in/meerashanaaz" rel="noopener">linkedin.com/in/meerashanaaz</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <ul>
+      <li>Technology Transformation</li><li>Leadership</li><li>Strategy and Architecture</li><li>Consulting</li>
+      <li>Software Delivery and Operations</li><li>Building High Performing Teams</li><li>Coaching and Mentoring</li><li>Engineering Management</li>
+    </ul>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <p class="summary">Global technology leader with <b>20+ years</b> of experience in enabling business transformation through technology, innovation, consulting, delivery and operational excellence. Consistent record of building high performing teams, and coaching/mentoring across organisations. Passionate about leveraging technology to drive change, solve complex problems, and deliver the best outcomes for customers and business.</p>
+
+  <section id="highlights">
+    <h2 class="sec-title">Career Highlights</h2>
+    <div class="cards">
+      <article class="card">
+        <h3>People and Leadership</h3>
+        <ul class="tick">
+          <li>Consistently built high performing teams to deliver business value</li>
+          <li>Led distributed teams of up to <b>400</b>, across 7 cities and 3 countries</li>
+          <li>Managed relationships with <b>50+ customer stakeholders</b> at all levels of the organisation</li>
+          <li>Achieved <b>50/50 gender diversity</b> in the architecture team</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Strategy and Architecture</h3>
+        <ul class="tick">
+          <li>Led the creation of a <b>3-year architecture roadmap</b> for Australia’s largest utility</li>
+          <li>Augmented the 3-year business strategy with <b>tech strategy</b></li>
+          <li>Played the key “front door” function for the business unit</li>
+          <li>Designed high fidelity real-time trading systems</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Technology and Innovation</h3>
+        <ul class="tick">
+          <li>Conducted multiple <b>hackathons</b> across distributed teams to foster continuous innovation</li>
+          <li>Extensive experience as developer, tech lead, architect, business analyst, QA and operations</li>
+          <li>Designed and developed brokerage trading systems for global banks</li>
+          <li>Built tools for deployment automation, Continuous Integration and Delivery</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Delivery / Operations</h3>
+        <ul class="tick">
+          <li>Design and delivery of Australia’s first voice app and the Virtual Power Plant platform</li>
+          <li>Led teams managing delivery and operations of <b>150+ applications</b> for a large global bank</li>
+          <li>Decreased time to market from 18 months to <b>quarterly</b> through Agile and DevOps</li>
+          <li>Automation of IT Risk Management and metrics for proactive monitoring</li>
+        </ul>
+      </article>
+      <article class="card wide">
+        <h3>Financials</h3>
+        <ul class="tick">
+          <li>Full P&amp;L accountability of <b>US$30 million</b> with <b>15–20% growth</b>, exceeding both top and bottom line, with 100% operational compliance across all financial parameters</li>
+          <li>Structured and managed deals with innovative financial modelling of up to <b>AU$100 million</b></li>
+          <li><b>30% operational cost reduction</b> through operating model changes</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2 class="sec-title">Experience</h2>
+
+    <details class="job" open>
+      <summary>
+        <span class="co">David Jones, Australia</span><span class="when">Jun 2023 – Aug 2024</span>
+        <span class="title">Head of Technology</span>
+        <span class="meta">Reported to: CTO · Direct/indirect reports: 60</span>
+      </summary>
+      <div class="body">
+        <h4>Accountabilities and Responsibilities</h4>
+        <ul>
+          <li>Build the technology roadmap and vision</li>
+          <li>Scale the team and delivery (10x)</li>
+          <li>Architectural and design decisions</li>
+          <li>People management, recruitment, coaching and mentoring</li>
+        </ul>
+        <h4>Notable Outcomes</h4>
+        <ul>
+          <li>Delivered full NPP-PayTo capability; first bank to implement it in Australia</li>
+          <li>Delivered password-less login capability</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="job">
+      <summary>
+        <span class="co">Ferocia Private Limited, Australia</span><span class="when">Nov 2021 – Apr 2023</span>
+        <span class="title">Head of Product and Technology</span>
+        <span class="meta">Reported to: CEO · Direct/indirect reports: 20</span>
+      </summary>
+      <div class="body">
+        <h4>Accountabilities and Responsibilities</h4>
+        <ul>
+          <li>Create the product and technology roadmap and vision for Bendigo Bank Internet and Mobile Banking</li>
+          <li>Scale the team and delivery (10x)</li>
+          <li>Migrate the application from on-prem to cloud</li>
+          <li>Establish ways of working across large enterprise and start-up teams</li>
+          <li>Shorten deployment cycle time and increase customer value drops</li>
+          <li>Architectural and design decisions</li>
+          <li>People management, recruitment, coaching and mentoring</li>
+        </ul>
+        <h4>Notable Outcomes</h4>
+        <ul>
+          <li>Defined a clear product vision, roadmap and OKRs for FY23, and delivered to them</li>
+          <li>Established engineering teams and delivery squads to deliver to the OKRs</li>
+          <li>Promoted 2 Senior Engineers to Engineering Managers, with the right support for them to grow</li>
+          <li>Coached and promoted Product Leadership from within</li>
+          <li>Improved Team Health from 7.0 to 8.4 within 8 months</li>
+          <li>Delivered full NPP-PayTo capability; first bank to implement it in Australia</li>
+          <li>Delivered password-less login capability</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="job">
+      <summary>
+        <span class="co">AGL Energy, Melbourne, Australia</span><span class="when">Aug 2017 – Jun 2021</span>
+        <span class="title">Development and Solution Design Manager / Senior Manager, Platform Architecture</span>
+        <span class="meta">Reported to: GM Integrated Energy Technology · Direct/indirect reports: 10–25</span>
+      </summary>
+      <div class="body">
+        <p class="tech"><b>Technologies:</b> Voice Apps (Alexa, Google), Azure, Serverless Computing, Event-based architecture, Microsoft Data Warehouse, Azure ML, DevOps, Infrastructure as Code (Terraform, ARM), Azure DevOps, Data Explorer, Stream Analytics, Data Factory, Event Hub, AKS.</p>
+        <h4>Accountabilities and Responsibilities</h4>
+        <ul>
+          <li>Establish architecture, BA and development teams and software engineering disciplines</li>
+          <li>Effective definition and delivery of architecture and solutions</li>
+          <li>Understand both the technology and the business functions of services; guide and advise business and IT stakeholders</li>
+          <li>Develop and deliver the overall functional roadmaps in collaboration with Value Stream Leads, Program Managers, Product Teams and Business teams</li>
+          <li>Represent the business process owner in all underlying IT processes which enable or support business solutions in the portfolio</li>
+          <li>Overall technology direction of the relevant IT solutions, suitability for meeting business objectives, and ongoing support and development progression</li>
+          <li>Project and program estimation, business case building, technology and architecture roadmaps</li>
+          <li>IT platform risk management</li>
+          <li>Drive innovation across the business unit: evaluate emerging technologies, hackathons, PoCs and pilots</li>
+          <li>Cost optimisation through economies of scale, cloud optimisation, re-use and optimal technology selection</li>
+          <li>Contribution to the annual budgeting process</li>
+        </ul>
+        <h4>Notable Outcomes</h4>
+        <ul>
+          <li>Led and defined the architectural and <b>capability roadmap</b></li>
+          <li>Defined the <b>Product Model architecture</b> and solution, from ideation to execution, for the New Energy business</li>
+          <li>Successful mobilisation, design, delivery and 24-month strategic direction of <b>AGL’s Virtual Power Plant</b></li>
+          <li><b>Machine Learning platform</b> evaluation through simultaneous Proofs of Concept across AWS, Azure and Google Cloud</li>
+          <li>Established a continuous shaping process to enable a manageable <b>flow of work</b></li>
+          <li>Achieved <b>50/50 gender diversity</b></li>
+          <li>Led the creation of the <b>architecture roadmap</b> for AGL’s Integrated Energy, with 3 large programs in flight covering about 60 applications, used as the blueprint for all technical solutions and designs</li>
+          <li>Developed an <b>automated risk management</b> framework for proactive risk monitoring across the platform</li>
+          <li>Identified around <b>AU$3 million in savings</b> through re-use, cloud optimisation and governance</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="job">
+      <summary>
+        <span class="co">Cognizant Technology Solutions Ltd, Australia and USA</span><span class="when">Aug 2011 – Jul 2017</span>
+        <span class="title">Senior Account and Delivery Manager, Banking and Financial Services</span>
+        <span class="meta">Reported to: Head of Banking and Financial Services · Direct/indirect reports: 10–400</span>
+      </summary>
+      <div class="body">
+        <h4>Accountabilities and Responsibilities</h4>
+        <ul>
+          <li>Managing multiple global distributed Banking and Financial Services customers</li>
+          <li>Planning and budgeting; <b>pricing negotiations</b> and contract management</li>
+          <li>Account financial management: budgeting, forecasting, top-line and bottom-line management, cost optimisation and monitoring</li>
+          <li>Solution consulting, RFI and RFP response creation and management, bid management</li>
+          <li>Strategic account planning and tracking; pre-sales and account mining</li>
+          <li>Build, expand and diversify services and relationships</li>
+          <li><b>Delivery management</b>, including stakeholder management and executive reporting</li>
+          <li>People, career and team management, with regular performance reviews, goal setting, coaching and mentoring</li>
+          <li>Internal practice development strategy</li>
+        </ul>
+        <h4>Notable Outcomes</h4>
+        <ul>
+          <li>Consistently achieved <b>15–20% growth</b> in both top line and bottom line</li>
+          <li>Delivered about <b>US$3 million of value-added</b> services annually out of a <b>US$30 million</b> portfolio</li>
+          <li>Managed a team of <b>400 people</b> delivering services from business requirements to production support and call centre, consistently achieving an Employee Satisfaction Score above 4 (out of 5), above the Business Unit average</li>
+          <li>Consistently achieved a Customer Satisfaction Score above 3.8 (out of 5), above the Business Unit average</li>
+          <li>Consistently achieved <b>&gt;95% operational compliance</b> (forecast accuracy, invoicing and contract management, span of control, reserves maintenance) despite the size of the engagement</li>
+          <li>Streamlined reporting at project, program and executive level</li>
+          <li>Established an <b>Account Governance framework</b> with both customer and internal teams</li>
+          <li><b>Zero escalations</b> on delivery and relationship</li>
+          <li>Managed <b>60+ customer stakeholders</b> simultaneously</li>
+          <li>Conducted Women Empowerment events, both internal to the organisation and for customers</li>
+          <li>Taught Applied Science and Robotics to middle school children as part of STEM education volunteering</li>
+          <li>Organised and presented <b>7 workshops and roadshows</b> on Digital, Agile, DevOps, Offshoring and RPA</li>
+          <li>Conducted hackathons on <b>Blockchain</b> with Trade Finance and Distributed Ledger themes</li>
+          <li>Provided an automation solution to <b>save up to $10 million</b> on a migration activity</li>
+          <li>Provided a new operating model and delivery model that moved time to market from annual to quarterly, with a <b>30% reduction in cost of operations</b> and improved SLAs</li>
+          <li>Completed an AU$100 million IT Operations assessment with proposed <b>cost savings of 25–45%</b> through various models and levers</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="job">
+      <summary>
+        <span class="co">Cognizant Technology Solutions Corp, USA</span><span class="when">May 2005 – Jul 2011</span>
+        <span class="title">Technical Lead, Architect, PM, Banking and Financial Services</span>
+        <span class="meta">Reported to: Account/Delivery Manager · Direct/indirect reports: 5–40 · Customer: JPMorgan Chase, Private Banking</span>
+      </summary>
+      <div class="body">
+        <p class="tech"><b>Technologies:</b> J2EE, C++, IBM suite of applications, VB.NET, Visual Basic, C#, Unix, FIX Protocol, Business Objects.</p>
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Business analysis, requirement analysis and gathering</li>
+          <li>Solution design, development and testing</li>
+          <li>Release management, deployment support and management</li>
+          <li>Distributed team delivery planning and management</li>
+          <li>Testing support and level 2/3 application support</li>
+          <li>Development at all tiers of the applications</li>
+          <li>Project planning, tracking, management and delivery</li>
+          <li>360° stakeholder management</li>
+        </ul>
+        <h4>Notable Outcomes</h4>
+        <ul>
+          <li>End-to-end development and implementation of a trading system and 4 supporting systems</li>
+          <li>Complete <b>re-write of the trading system from client-server Visual Basic to a 3-tier web-based system</b>, with straight-through processing, contextual search, excellent user experience, full trade life-cycle and comprehensive reporting</li>
+          <li>Built middleware <b>C++ processes for FIX messaging and real-time trading</b> with push technology</li>
+          <li><b>Deployment and release automation</b> across 5 regions</li>
+          <li>Complete revamp of the client mandate and portfolio management system</li>
+          <li>Managed a large <b>integration program of 150+ applications</b>, in 3 phases over 3 years, as part of a major merger</li>
+          <li>As solution consultant, designed end-to-end application architecture, including STP, search and real-time publishing solutions</li>
+          <li>Managed <b>a team of 35</b>, including customer teams</li>
+          <li>Considered an <b>SME</b> by both customer and business</li>
+          <li>Established automation and processes for release and deployment management; automated unit testing using JUnit</li>
+        </ul>
+        <h4>Key Learning</h4>
+        <ul>
+          <li>Started as a Visual Basic programmer and quickly scaled up to J2EE to revamp legacy systems</li>
+          <li>Early in the migration, moved some untested code to production, corrupting data; this led to putting the right testing and validation processes in place, and the rest of the migration was executed successfully</li>
+          <li>Stakeholder management at various levels and across teams</li>
+          <li>A key learning period for stepping into the next role as Account Manager</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="job">
+      <summary>
+        <span class="co">Cognizant Technology Solutions Corp, India</span><span class="when">Feb 2000 – Apr 2005</span>
+        <span class="title">Developer, Project/Team Lead, Banking and Financial Services</span>
+        <span class="meta">Reported to: Delivery Manager · Direct/indirect reports: 5–10 · Customers: Sallie Mae, Washington Mutual, Duty Free Shops, Marks &amp; Spencer, First Data</span>
+      </summary>
+      <div class="body">
+        <p class="tech"><b>Technologies:</b> Visual Basic, ASP, COM, COM+, Java, J2EE, Crystal Reports, Business Objects, WebSphere Portal, Rational Tools, HTML, JavaScript, CSS, XML, MQ Series, Perl, Oracle, UNIX, MS SQL Server.</p>
+        <h4>Responsibilities</h4>
+        <ul>
+          <li>Business analysis, requirement analysis and gathering</li>
+          <li>Solution design, development and testing; user interface design</li>
+          <li>Release management, deployment support and management</li>
+          <li>Distributed team delivery planning and management</li>
+          <li>Testing support and level 2/3 application support</li>
+          <li>Development at all tiers of the applications</li>
+        </ul>
+        <h4>Notable Outcomes</h4>
+        <ul>
+          <li>Developed a <b>Perl-based ETL program</b> that was <b>5x faster</b> than the existing ETL</li>
+          <li>Designed and developed Cognizant’s <b>first multilingual e-commerce website</b>, including content and template management so users could directly manage content for various languages</li>
+          <li>Migration of the payment evaluation and credit risk calculation system to a new version of Total System</li>
+          <li>Developed the first internal suite of <b>Knowledge Management Systems</b> and framework, adopted across <b>20 customers</b> within the organisation</li>
+        </ul>
+        <h4>Key Learning</h4>
+        <ul>
+          <li>Project management and stakeholder management</li>
+          <li>New technology in every project and customer</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <section id="education">
+    <h2 class="sec-title">Education</h2>
+    <div class="card edu">
+      <p><b>Post Graduate in Computer Applications</b><small>National Institute of Information Technology</small></p>
+      <p style="margin:0"><b>Bachelor’s in Mathematics, Statistics and Computer Science</b><small>MS University, India</small></p>
+    </div>
+  </section>
+
+  <section id="competencies">
+    <h2 class="sec-title">Core Competencies</h2>
+    <div class="cards comp">
+      <article class="card">
+        <h3>Domain / Methodology</h3>
+        <ul class="chips">
+          <li>Energy Markets</li><li>Energy Trading</li><li>Distributed Energy</li><li>New Energy</li><li>Investment and Private Banking</li><li>Asset and Wealth Management</li><li>Banking</li><li>Agile and Scrum</li><li>Waterfall</li><li>CI/CD</li><li>DevOps</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Technology</h3>
+        <ul class="chips">
+          <li>Cloud Services</li><li>Machine Learning</li><li>RPA</li><li>Enterprise, Platform and Solution Architecture</li><li>Data &amp; Analytics</li><li>Event-driven architecture</li><li>Digital Twins</li><li>MLOps</li><li>Infrastructure as Code</li><li>Test Automation</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Leadership</h3>
+        <ul class="chips">
+          <li>Diverse Distributed High Performing Team Building</li><li>Stakeholder Management</li><li>Vendor Management</li><li>Partnerships</li><li>Project and Program Management</li><li>P&amp;L Management</li><li>Strategy</li><li>Coaching and Mentoring</li><li>IT Risk Management</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="companies">
+    <h2 class="sec-title">Companies</h2>
+    <div class="card">
+      <ul class="chips">
+        <li>Ferocia</li><li>AGL Energy</li><li>Cognizant Technology Solutions (Australia, India, USA)</li><li>JP Morgan Chase</li><li>Sallie Mae</li><li>Providian Financials</li><li>Duty Free Shop</li><li>First Data</li><li>Metlife</li><li>Bankwest</li><li>Computershare</li><li>ADP Australia</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© <span id="yr">2026</span> Meera Shanaaz Aneez</span>
+  <span>References on request</span>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Expand all roles when printing, restore afterwards
+  var opened = [];
+  window.addEventListener('beforeprint', function(){
+    opened = [];
+    document.querySelectorAll('details.job').forEach(function(d,i){ if(!d.open){ opened.push(i); d.open = true; } });
+  });
+  window.addEventListener('afterprint', function(){
+    var all = document.querySelectorAll('details.job');
+    opened.forEach(function(i){ all[i].open = false; });
+  });
+</script>
+</body>
+</html>
