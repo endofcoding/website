@@ -1,550 +1,1502 @@
 <!doctype html>
 <html lang="en-AU">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Meera Shanaaz Aneez — Technology Leader</title>
-<meta name="description" content="Global technology leader with 20+ years of experience in technology transformation, strategy and architecture, software delivery and building high performing teams.">
-<meta name="theme-color" content="#14313a">
-<style>
-:root{
-  --bg:#f7f5f0; --surface:#ffffff; --ink:#1b2427; --muted:#5b676b; --line:#e2ded4;
-  --accent:#14565f; --accent-soft:#e3eeee; --warm:#b4691f; --strip:#14313a; --strip-ink:#f3efe6;
-  --shadow:0 1px 2px rgba(20,49,58,.06),0 6px 20px rgba(20,49,58,.06);
-}
-@media (prefers-color-scheme:dark){
-  :root{--bg:#10171a; --surface:#172126; --ink:#e8ecec; --muted:#9aa8ac; --line:#26343a;
-    --accent:#6cc0c8; --accent-soft:#1c2f35; --warm:#e0a15f; --strip:#0b1114; --strip-ink:#e8ecec;
-    --shadow:none}
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  -webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-underline-offset:3px}
-a:hover{color:var(--warm)}
-.wrap{max-width:920px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;line-height:1.2;margin:0}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meera Shanaaz Aneez — Technology Leader</title>
+  <meta name="description"
+    content="Global technology leader with 25+ years of experience in technology transformation, strategy and architecture, software delivery and building high performing teams.">
+  <meta name="theme-color" content="#14313a">
+  <style>
+    :root {
+      --bg: #f7f5f0;
+      --surface: #ffffff;
+      --ink: #1b2427;
+      --muted: #5b676b;
+      --line: #e2ded4;
+      --accent: #14565f;
+      --accent-soft: #e3eeee;
+      --warm: #b4691f;
+      --strip: #14313a;
+      --strip-ink: #f3efe6;
+      --shadow: 0 1px 2px rgba(20, 49, 58, .06), 0 6px 20px rgba(20, 49, 58, .06);
+    }
 
-/* header */
-header{padding:56px 0 36px}
-.hero{display:grid;grid-template-columns:132px 1fr;gap:28px;align-items:center}
-.hero img{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 20%;
-  border:4px solid var(--surface);box-shadow:var(--shadow)}
-h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-.01em}
-.role{margin:6px 0 16px;color:var(--warm);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
-.contact{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0;padding:0;list-style:none;font-size:.95rem}
-.contact a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
-.contact a:hover{color:var(--accent);border-color:var(--accent)}
-.contact span{color:var(--muted);margin-right:6px}
+    @media (prefers-color-scheme:dark) {
+      :root {
+        --bg: #10171a;
+        --surface: #172126;
+        --ink: #e8ecec;
+        --muted: #9aa8ac;
+        --line: #26343a;
+        --accent: #6cc0c8;
+        --accent-soft: #1c2f35;
+        --warm: #e0a15f;
+        --strip: #0b1114;
+        --strip-ink: #e8ecec;
+        --shadow: none
+      }
+    }
 
-.strip{background:var(--strip);color:var(--strip-ink)}
-.strip ul{list-style:none;margin:0;padding:14px 0;display:flex;flex-wrap:wrap;gap:6px 24px;justify-content:center;font-size:.85rem;font-weight:500}
+    * {
+      box-sizing: border-box
+    }
 
-.summary{font-size:1.15rem;max-width:760px;margin:40px 0 8px;color:var(--ink)}
-.summary b{color:var(--accent)}
+    html {
+      scroll-behavior: smooth
+    }
 
-/* sections */
-section{padding:36px 0 8px}
-.sec-title{display:flex;align-items:center;gap:16px;font-size:1.5rem;margin-bottom:22px}
-.sec-title::after{content:"";flex:1;height:1px;background:var(--line)}
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased
+    }
 
-/* highlights */
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:var(--shadow)}
-.card h3{font-size:1.1rem;color:var(--accent);margin-bottom:10px}
-.card.wide{grid-column:1/-1}
-ul.tick{margin:0;padding-left:1.1em}
-ul.tick li{margin:6px 0}
-ul.tick li::marker{color:var(--warm)}
-.card.wide ul{columns:1}
-@media(min-width:700px){.card.wide ul{columns:2;column-gap:36px}.card.wide li{break-inside:avoid}}
+    a {
+      color: var(--accent);
+      text-underline-offset: 3px
+    }
 
-/* experience */
-.job{background:var(--surface);border:1px solid var(--line);border-radius:14px;margin-bottom:14px;box-shadow:var(--shadow);overflow:hidden}
-.job summary{list-style:none;cursor:pointer;padding:20px 22px;display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:baseline}
-.job summary::-webkit-details-marker{display:none}
-.job summary:hover{background:var(--accent-soft)}
-.job summary:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
-.job .co{font-family:Georgia,serif;font-size:1.2rem;font-weight:700}
-.job .when{color:var(--muted);font-size:.9rem;white-space:nowrap}
-.job .title{grid-column:1/-1;color:var(--accent);font-weight:600}
-.job .meta{grid-column:1/-1;color:var(--muted);font-size:.88rem}
-.job .chev{display:none}
-.job summary::after{content:"Show details";grid-column:1/-1;margin-top:6px;font-size:.8rem;color:var(--warm);font-weight:600}
-.job[open] summary::after{content:"Hide details"}
-.job .body{padding:4px 22px 22px;border-top:1px solid var(--line)}
-.job h4{margin:18px 0 6px;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.job ul{margin:0;padding-left:1.1em}
-.job li{margin:4px 0}
-.job li::marker{color:var(--warm)}
-.tech{font-size:.9rem;color:var(--muted);margin-top:14px}
-.tech b{color:var(--ink)}
+    a:hover {
+      color: var(--warm)
+    }
 
-/* education / competencies */
-.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
-.edu p{margin:0 0 14px}
-.edu small{color:var(--muted);display:block}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
-.chips li{background:var(--accent-soft);color:var(--ink);border-radius:999px;padding:4px 12px;font-size:.85rem}
-.comp h3{font-size:1rem;margin:0 0 10px;color:var(--accent)}
-.comp .card+.card{margin-top:0}
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 0 20px
+    }
 
-footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+      line-height: 1.2;
+      margin: 0
+    }
 
-@media(max-width:600px){
-  header{padding-top:36px}
-  .hero{grid-template-columns:1fr;text-align:center;justify-items:center}
-  .contact{justify-content:center}
-  .job summary{grid-template-columns:1fr}
-  .job .when{white-space:normal}
-}
-@media print{
-  :root{--bg:#fff;--surface:#fff;--shadow:none}
-  body{font-size:11pt}
-  .strip{background:#eee;color:#000}
-  .job .body{display:block}
-  .job summary::after{display:none}
-  section{break-inside:auto}
-  .card,.job{break-inside:avoid}
-}
+    /* header */
+    header {
+      padding: 56px 0 36px
+    }
 
+    .hero {
+      display: grid;
+      grid-template-columns: 132px 1fr;
+      gap: 28px;
+      align-items: center
+    }
 
-.dl{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:9px 18px;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:600;font-size:.92rem;text-decoration:none}
-.dl:hover{background:var(--warm);color:#fff}
-.dl:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
-@media(max-width:600px){.dl{margin-top:14px}}
-@media print{.dl{display:none}}
+    .hero img {
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: 50% 20%;
+      border: 4px solid var(--surface);
+      box-shadow: var(--shadow)
+    }
 
-@media print{
-  @page{size:A4;margin:12mm}
-  body{font-size:9.5pt;line-height:1.4}
-  .wrap{max-width:none;padding:0}
-  header{padding:0 0 12px}
-  .hero{grid-template-columns:96px 1fr;gap:18px}
-  .hero img{width:96px;height:96px;box-shadow:none}
-  h1{font-size:24pt}
-  .summary{font-size:10.5pt;margin:14px 0 4px}
-  section{padding:14px 0 0}
-  .sec-title{font-size:14pt;margin-bottom:10px;break-after:avoid}
-  .cards{gap:8px}
-  .card{padding:10px 12px;box-shadow:none;border-radius:8px}
-  .card.wide ul{columns:2}
-  ul.tick li{margin:2px 0}
-  .job{box-shadow:none;break-inside:auto;margin-bottom:8px;border-radius:8px}
-  .job summary{padding:10px 14px;break-after:avoid}
-  .job .body{padding:0 14px 10px}
-  .job h4{margin:8px 0 3px;break-after:avoid}
-  .job li{margin:1px 0}
-  .job .co{font-size:11.5pt}
-  .chips{gap:4px}.chips li{padding:1px 8px;font-size:8.5pt}
-  footer{margin-top:16px;padding:10px 0 0}
-}
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      letter-spacing: -.01em
+    }
 
-.pdf-capture #pdf-root{width:794px;background:#fff;color:#111}
-.pdf-capture #pdf-root *{box-shadow:none!important}
-.pdf-capture #pdf-root .dl{display:none!important}
-.pdf-capture #pdf-root .wrap{max-width:none;width:100%;padding:0 28px}
-.pdf-capture #pdf-root .hero{grid-template-columns:110px 1fr}
-.pdf-capture #pdf-root .card.wide ul{columns:1}
-.pdf-capture #pdf-root #highlights .cards{grid-template-columns:repeat(2,1fr)}
-.pdf-capture #pdf-root .card,.pdf-capture #pdf-root .job{break-inside:avoid}
-</style>
+    .role {
+      margin: 6px 0 16px;
+      color: var(--warm);
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-size: .85rem
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: .95rem
+    }
+
+    .contact a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .contact a:hover {
+      color: var(--accent);
+      border-color: var(--accent)
+    }
+
+    .contact span {
+      color: var(--muted);
+      margin-right: 6px
+    }
+
+    .strip {
+      background: var(--strip);
+      color: var(--strip-ink)
+    }
+
+    .strip ul {
+      list-style: none;
+      margin: 0;
+      padding: 14px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 24px;
+      justify-content: center;
+      font-size: .85rem;
+      font-weight: 500
+    }
+
+    .summary {
+      font-size: 1.15rem;
+      max-width: 760px;
+      margin: 40px 0 8px;
+      color: var(--ink)
+    }
+
+    .summary b {
+      color: var(--accent)
+    }
+
+    /* sections */
+    section {
+      padding: 36px 0 8px
+    }
+
+    .sec-title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      font-size: 1.5rem;
+      margin-bottom: 22px
+    }
+
+    .sec-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--line)
+    }
+
+    /* highlights */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: var(--shadow)
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 10px
+    }
+
+    .card.wide {
+      grid-column: 1/-1
+    }
+
+    ul.tick {
+      margin: 0;
+      padding-left: 1.1em
+    }
+
+    ul.tick li {
+      margin: 6px 0
+    }
+
+    ul.tick li::marker {
+      color: var(--warm)
+    }
+
+    .card.wide ul {
+      columns: 1
+    }
+
+    @media(min-width:700px) {
+      .card.wide ul {
+        columns: 2;
+        column-gap: 36px
+      }
+
+      .card.wide li {
+        break-inside: avoid
+      }
+    }
+
+    /* experience */
+    .job {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      margin-bottom: 14px;
+      box-shadow: var(--shadow);
+      overflow: hidden
+    }
+
+    .job summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 20px 22px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2px 16px;
+      align-items: baseline
+    }
+
+    .job summary::-webkit-details-marker {
+      display: none
+    }
+
+    .job summary:hover {
+      background: var(--accent-soft)
+    }
+
+    .job summary:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: -2px
+    }
+
+    .job .co {
+      font-family: Georgia, serif;
+      font-size: 1.2rem;
+      font-weight: 700
+    }
+
+    .job .when {
+      color: var(--muted);
+      font-size: .9rem;
+      white-space: nowrap
+    }
+
+    .job .title {
+      grid-column: 1/-1;
+      color: var(--accent);
+      font-weight: 600
+    }
+
+    .job .meta {
+      grid-column: 1/-1;
+      color: var(--muted);
+      font-size: .88rem
+    }
+
+    .job .chev {
+      display: none
+    }
+
+    .job summary::after {
+      content: "Show details";
+      grid-column: 1/-1;
+      margin-top: 6px;
+      font-size: .8rem;
+      color: var(--warm);
+      font-weight: 600
+    }
+
+    .job[open] summary::after {
+      content: "Hide details"
+    }
+
+    .job .body {
+      padding: 4px 22px 22px;
+      border-top: 1px solid var(--line)
+    }
+
+    .job h4 {
+      margin: 18px 0 6px;
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .job ul {
+      margin: 0;
+      padding-left: 1.1em
+    }
+
+    .job li {
+      margin: 4px 0
+    }
+
+    .job li::marker {
+      color: var(--warm)
+    }
+
+    .tech {
+      font-size: .9rem;
+      color: var(--muted);
+      margin-top: 14px
+    }
+
+    .tech b {
+      color: var(--ink)
+    }
+
+    /* education / competencies */
+    .two {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px
+    }
+
+    .edu p {
+      margin: 0 0 14px
+    }
+
+    .edu small {
+      color: var(--muted);
+      display: block
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none
+    }
+
+    .chips li {
+      background: var(--accent-soft);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: .85rem
+    }
+
+    .comp h3 {
+      font-size: 1rem;
+      margin: 0 0 10px;
+      color: var(--accent)
+    }
+
+    .comp .card+.card {
+      margin-top: 0
+    }
+
+    footer {
+      margin-top: 56px;
+      padding: 28px 0 48px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .9rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    @media(max-width:600px) {
+      header {
+        padding-top: 36px
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center
+      }
+
+      .contact {
+        justify-content: center
+      }
+
+      .job summary {
+        grid-template-columns: 1fr
+      }
+
+      .job .when {
+        white-space: normal
+      }
+    }
+
+    @media print {
+      :root {
+        --bg: #fff;
+        --surface: #fff;
+        --shadow: none
+      }
+
+      body {
+        font-size: 11pt
+      }
+
+      .strip {
+        background: #eee;
+        color: #000
+      }
+
+      .job .body {
+        display: block
+      }
+
+      .job summary::after {
+        display: none
+      }
+
+      section {
+        break-inside: auto
+      }
+
+      .card,
+      .job {
+        break-inside: avoid
+      }
+    }
+
+    .dl {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--bg);
+      font-weight: 600;
+      font-size: .92rem;
+      text-decoration: none
+    }
+
+    .dl:hover {
+      background: var(--warm);
+      color: #fff
+    }
+
+    .dl:focus-visible {
+      outline: 3px solid var(--warm);
+      outline-offset: 2px
+    }
+
+    @media(max-width:600px) {
+      .dl {
+        margin-top: 14px
+      }
+    }
+
+    @media print {
+      .dl {
+        display: none
+      }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm
+      }
+
+      body {
+        font-size: 9.5pt;
+        line-height: 1.4
+      }
+
+      .wrap {
+        max-width: none;
+        padding: 0
+      }
+
+      header {
+        padding: 0 0 12px
+      }
+
+      .hero {
+        grid-template-columns: 96px 1fr;
+        gap: 18px
+      }
+
+      .hero img {
+        width: 96px;
+        height: 96px;
+        box-shadow: none
+      }
+
+      h1 {
+        font-size: 24pt
+      }
+
+      .summary {
+        font-size: 10.5pt;
+        margin: 14px 0 4px
+      }
+
+      section {
+        padding: 14px 0 0
+      }
+
+      .sec-title {
+        font-size: 14pt;
+        margin-bottom: 10px;
+        break-after: avoid
+      }
+
+      .cards {
+        gap: 8px
+      }
+
+      .card {
+        padding: 10px 12px;
+        box-shadow: none;
+        border-radius: 8px
+      }
+
+      .card.wide ul {
+        columns: 2
+      }
+
+      ul.tick li {
+        margin: 2px 0
+      }
+
+      .job {
+        box-shadow: none;
+        break-inside: auto;
+        margin-bottom: 8px;
+        border-radius: 8px
+      }
+
+      .job summary {
+        padding: 10px 14px;
+        break-after: avoid
+      }
+
+      .job .body {
+        padding: 0 14px 10px
+      }
+
+      .job h4 {
+        margin: 8px 0 3px;
+        break-after: avoid
+      }
+
+      .job li {
+        margin: 1px 0
+      }
+
+      .job .co {
+        font-size: 11.5pt
+      }
+
+      .chips {
+        gap: 4px
+      }
+
+      .chips li {
+        padding: 1px 8px;
+        font-size: 8.5pt
+      }
+
+      footer {
+        margin-top: 16px;
+        padding: 10px 0 0
+      }
+    }
+
+    .pdf-capture #pdf-root {
+      width: 794px;
+      background: #fff;
+      color: #111
+    }
+
+    .pdf-capture #pdf-root * {
+      box-shadow: none !important
+    }
+
+    .pdf-capture #pdf-root .dl {
+      display: none !important
+    }
+
+    .pdf-capture #pdf-root .wrap {
+      max-width: none;
+      width: 100%;
+      padding: 0 28px
+    }
+
+    .pdf-capture #pdf-root .hero {
+      grid-template-columns: 110px 1fr
+    }
+
+    .pdf-capture #pdf-root .card.wide ul {
+      columns: 1
+    }
+
+    .pdf-capture #pdf-root #highlights .cards {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .pdf-capture #pdf-root .card,
+    .pdf-capture #pdf-root .job {
+      break-inside: avoid
+    }
+
+    /* Local File / Banner Helper */
+    .local-banner {
+      background: var(--accent-soft);
+      color: var(--ink);
+      padding: 10px 20px;
+      font-size: .85rem;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      position: sticky;
+      top: 0;
+      z-index: 999
+    }
+
+    .local-banner .banner-text {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap
+    }
+
+    .local-banner label {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: underline;
+      cursor: pointer
+    }
+
+    .local-banner button.banner-close {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.25rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 0 4px
+    }
+
+    .local-banner button.banner-close:hover {
+      color: var(--ink)
+    }
+
+    @media print {
+      .local-banner {
+        display: none !important
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <div class="wrap hero">
-    <img src="photo.jpg" alt="Photo of Meera Shanaaz Aneez" width="132" height="132">
-    <div>
-      <h1>Meera Shanaaz Aneez</h1>
-      <p class="role">Technology Leader</p>
-      <ul class="contact">
-        <li><span aria-hidden="true">✉</span><a href="mailto:meera.aneez@gmail.com">meera.aneez@gmail.com</a></li>
-        <li><span aria-hidden="true">☏</span><a href="tel:+61432800521">+61 432 800 521</a></li>
-        <li><span aria-hidden="true">in</span><a href="https://www.linkedin.com/in/meerashanaaz" rel="noopener">linkedin.com/in/meerashanaaz</a></li>
-      </ul>
-      <a class="dl" id="dl-pdf" href="Meera-Shanaaz-Aneez-CV.pdf" download="Meera-Shanaaz-Aneez-CV.pdf">&#8681; Download CV (PDF)</a>
+  <aside id="local-file-banner" class="local-banner" style="display:none;">
+    <div class="banner-text">
+      <span>💡 Running via <code>file://</code> protocol. Browser security blocks dynamic file loading. Run a local
+        server (e.g. <code>npx serve</code> or <code>python3 -m http.server</code>) for automatic live updates, or
+        <label>choose <b>content.md</b> to preview now<input type="file" id="md-file-input" accept=".md"
+            style="display:none"></label>.</span>
     </div>
-  </div>
-</header>
+    <button class="banner-close" id="close-banner" aria-label="Dismiss banner">&times;</button>
+  </aside>
 
-<div class="strip">
-  <div class="wrap">
-    <ul>
-      <li>Technology Transformation</li><li>Leadership</li><li>Strategy and Architecture</li><li>Consulting</li>
-      <li>Software Delivery and Operations</li><li>Building High Performing Teams</li><li>Coaching and Mentoring</li><li>Engineering Management</li>
-    </ul>
-  </div>
-</div>
+  <div id="app"></div>
 
-<main class="wrap">
+  <!-- Embedded fallback so the page always renders even if fetch() is restricted on file:// protocol -->
+  <script id="fallback-md" type="text/markdown">
+---
+name: Meera Shanaaz Aneez
+role: Technology Leader
+photo: photo.jpg
+email: meera.aneez@gmail.com
+phone: "+61 432 800 521"
+linkedin: https://www.linkedin.com/in/meerashanaaz
+linkedin_label: linkedin.com/in/meerashanaaz
+pdf: Meera-Shanaaz-Aneez-CV.pdf
+strip:
+  - Technology Transformation
+  - Leadership
+  - Strategy and Architecture
+  - Consulting
+  - Software Delivery and Operations
+  - Building High Performing Teams
+  - Coaching and Mentoring
+  - Engineering Management
+---
 
-  <p class="summary">Global technology leader with <b>25+ years</b> of experience in enabling business transformation through technology, innovation, consulting, delivery and operational excellence. Consistent record of building high performing teams, and coaching/mentoring across organisations. Passionate about leveraging technology to drive change, solve complex problems, and deliver the best outcomes for customers and business.</p>
+## Summary
 
-  <section id="highlights">
-    <h2 class="sec-title">Career Highlights</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>People and Leadership</h3>
-        <ul class="tick">
-          <li>Consistently built high performing teams to deliver business value</li>
-          <li>Led distributed teams of up to <b>400</b>, across 7 cities and 3 countries</li>
-          <li>Managed relationships with <b>50+ customer stakeholders</b> at all levels of the organisation</li>
-          <li>Achieved <b>50/50 gender diversity</b> in the architecture team</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Strategy and Architecture</h3>
-        <ul class="tick">
-          <li>Led the creation of a <b>3-year architecture roadmap</b> for Australia’s largest utility</li>
-          <li>Augmented the 3-year business strategy with <b>tech strategy</b></li>
-          <li>Played the key “front door” function for the business unit</li>
-          <li>Designed high fidelity real-time trading systems</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Technology and Innovation</h3>
-        <ul class="tick">
-          <li>Conducted multiple <b>hackathons</b> across distributed teams to foster continuous innovation</li>
-          <li>Extensive experience as developer, tech lead, architect, business analyst, QA and operations</li>
-          <li>Designed and developed brokerage trading systems for global banks</li>
-          <li>Built tools for deployment automation, Continuous Integration and Delivery</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Delivery / Operations</h3>
-        <ul class="tick">
-          <li>Design and delivery of Australia’s first voice app and the Virtual Power Plant platform</li>
-          <li>Led teams managing delivery and operations of <b>150+ applications</b> for a large global bank</li>
-          <li>Decreased time to market from 18 months to <b>quarterly</b> through Agile and DevOps</li>
-          <li>Automation of IT Risk Management and metrics for proactive monitoring</li>
-        </ul>
-      </article>
-      <article class="card wide">
-        <h3>Financials</h3>
-        <ul class="tick">
-          <li>Full P&amp;L accountability of <b>US$30 million</b> with <b>15–20% growth</b>, exceeding both top and bottom line, with 100% operational compliance across all financial parameters</li>
-          <li>Structured and managed deals with innovative financial modelling of up to <b>AU$100 million</b></li>
-          <li><b>30% operational cost reduction</b> through operating model changes</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+Global technology leader with **25+ years** of experience in enabling business transformation through technology, innovation, consulting, delivery and operational excellence. Consistent record of building high performing teams, and coaching/mentoring across organisations. Passionate about leveraging technology to drive change, solve complex problems, and deliver the best outcomes for customers and business.
 
-  <section id="experience">
-    <h2 class="sec-title">Experience</h2>
+## Career Highlights
 
-    <details class="job" open>
-      <summary>
-        <span class="co">David Jones, Australia</span><span class="when">Jun 2023 – Aug 2024</span>
-        <span class="title">Head of Technology</span>
-        <span class="meta">Reported to: CTO · Direct/indirect reports: 60</span>
-      </summary>
-      <div class="body">
-        <h4>Accountabilities and Responsibilities</h4>
-        <ul>
-          <li>Build the technology roadmap and vision</li>
-          <li>Scale the team and delivery (10x)</li>
-          <li>Architectural and design decisions</li>
-          <li>People management, recruitment, coaching and mentoring</li>
-        </ul>
-        <h4>Notable Outcomes</h4>
-        <ul>
-          <li>Delivered full NPP-PayTo capability; first bank to implement it in Australia</li>
-          <li>Delivered password-less login capability</li>
-        </ul>
-      </div>
-    </details>
+### People and Leadership
+- Consistently built high performing teams to deliver business value
+- Led distributed teams of up to **400**, across 7 cities and 3 countries
+- Managed relationships with **50+ customer stakeholders** at all levels of the organisation
+- Achieved **50/50 gender diversity** in the architecture team
 
-    <details class="job">
-      <summary>
-        <span class="co">Ferocia Private Limited, Australia</span><span class="when">Nov 2021 – Apr 2023</span>
-        <span class="title">Head of Product and Technology</span>
-        <span class="meta">Reported to: CEO · Direct/indirect reports: 20</span>
-      </summary>
-      <div class="body">
-        <h4>Accountabilities and Responsibilities</h4>
-        <ul>
-          <li>Create the product and technology roadmap and vision for Bendigo Bank Internet and Mobile Banking</li>
-          <li>Scale the team and delivery (10x)</li>
-          <li>Migrate the application from on-prem to cloud</li>
-          <li>Establish ways of working across large enterprise and start-up teams</li>
-          <li>Shorten deployment cycle time and increase customer value drops</li>
-          <li>Architectural and design decisions</li>
-          <li>People management, recruitment, coaching and mentoring</li>
-        </ul>
-        <h4>Notable Outcomes</h4>
-        <ul>
-          <li>Defined a clear product vision, roadmap and OKRs for FY23, and delivered to them</li>
-          <li>Established engineering teams and delivery squads to deliver to the OKRs</li>
-          <li>Promoted 2 Senior Engineers to Engineering Managers, with the right support for them to grow</li>
-          <li>Coached and promoted Product Leadership from within</li>
-          <li>Improved Team Health from 7.0 to 8.4 within 8 months</li>
-          <li>Delivered full NPP-PayTo capability; first bank to implement it in Australia</li>
-          <li>Delivered password-less login capability</li>
-        </ul>
-      </div>
-    </details>
+### Strategy and Architecture
+- Led the creation of a **3-year architecture roadmap** for Australia’s largest utility
+- Augmented the 3-year business strategy with **tech strategy**
+- Played the key “front door” function for the business unit
+- Designed high fidelity real-time trading systems
 
-    <details class="job">
-      <summary>
-        <span class="co">AGL Energy, Melbourne, Australia</span><span class="when">Aug 2017 – Jun 2021</span>
-        <span class="title">Development and Solution Design Manager / Senior Manager, Platform Architecture</span>
-        <span class="meta">Reported to: GM Integrated Energy Technology · Direct/indirect reports: 10–25</span>
-      </summary>
-      <div class="body">
-        <p class="tech"><b>Technologies:</b> Voice Apps (Alexa, Google), Azure, Serverless Computing, Event-based architecture, Microsoft Data Warehouse, Azure ML, DevOps, Infrastructure as Code (Terraform, ARM), Azure DevOps, Data Explorer, Stream Analytics, Data Factory, Event Hub, AKS.</p>
-        <h4>Accountabilities and Responsibilities</h4>
-        <ul>
-          <li>Establish architecture, BA and development teams and software engineering disciplines</li>
-          <li>Effective definition and delivery of architecture and solutions</li>
-          <li>Understand both the technology and the business functions of services; guide and advise business and IT stakeholders</li>
-          <li>Develop and deliver the overall functional roadmaps in collaboration with Value Stream Leads, Program Managers, Product Teams and Business teams</li>
-          <li>Represent the business process owner in all underlying IT processes which enable or support business solutions in the portfolio</li>
-          <li>Overall technology direction of the relevant IT solutions, suitability for meeting business objectives, and ongoing support and development progression</li>
-          <li>Project and program estimation, business case building, technology and architecture roadmaps</li>
-          <li>IT platform risk management</li>
-          <li>Drive innovation across the business unit: evaluate emerging technologies, hackathons, PoCs and pilots</li>
-          <li>Cost optimisation through economies of scale, cloud optimisation, re-use and optimal technology selection</li>
-          <li>Contribution to the annual budgeting process</li>
-        </ul>
-        <h4>Notable Outcomes</h4>
-        <ul>
-          <li>Led and defined the architectural and <b>capability roadmap</b></li>
-          <li>Defined the <b>Product Model architecture</b> and solution, from ideation to execution, for the New Energy business</li>
-          <li>Successful mobilisation, design, delivery and 24-month strategic direction of <b>AGL’s Virtual Power Plant</b></li>
-          <li><b>Machine Learning platform</b> evaluation through simultaneous Proofs of Concept across AWS, Azure and Google Cloud</li>
-          <li>Established a continuous shaping process to enable a manageable <b>flow of work</b></li>
-          <li>Achieved <b>50/50 gender diversity</b></li>
-          <li>Led the creation of the <b>architecture roadmap</b> for AGL’s Integrated Energy, with 3 large programs in flight covering about 60 applications, used as the blueprint for all technical solutions and designs</li>
-          <li>Developed an <b>automated risk management</b> framework for proactive risk monitoring across the platform</li>
-          <li>Identified around <b>AU$3 million in savings</b> through re-use, cloud optimisation and governance</li>
-        </ul>
-      </div>
-    </details>
+### Technology and Innovation
+- Conducted multiple **hackathons** across distributed teams to foster continuous innovation
+- Extensive experience as developer, tech lead, architect, business analyst, QA and operations
+- Designed and developed brokerage trading systems for global banks
+- Built tools for deployment automation, Continuous Integration and Delivery
 
-    <details class="job">
-      <summary>
-        <span class="co">Cognizant Technology Solutions Ltd, Australia and USA</span><span class="when">Aug 2011 – Jul 2017</span>
-        <span class="title">Senior Account and Delivery Manager, Banking and Financial Services</span>
-        <span class="meta">Reported to: Head of Banking and Financial Services · Direct/indirect reports: 10–400</span>
-      </summary>
-      <div class="body">
-        <h4>Accountabilities and Responsibilities</h4>
-        <ul>
-          <li>Managing multiple global distributed Banking and Financial Services customers</li>
-          <li>Planning and budgeting; <b>pricing negotiations</b> and contract management</li>
-          <li>Account financial management: budgeting, forecasting, top-line and bottom-line management, cost optimisation and monitoring</li>
-          <li>Solution consulting, RFI and RFP response creation and management, bid management</li>
-          <li>Strategic account planning and tracking; pre-sales and account mining</li>
-          <li>Build, expand and diversify services and relationships</li>
-          <li><b>Delivery management</b>, including stakeholder management and executive reporting</li>
-          <li>People, career and team management, with regular performance reviews, goal setting, coaching and mentoring</li>
-          <li>Internal practice development strategy</li>
-        </ul>
-        <h4>Notable Outcomes</h4>
-        <ul>
-          <li>Consistently achieved <b>15–20% growth</b> in both top line and bottom line</li>
-          <li>Delivered about <b>US$3 million of value-added</b> services annually out of a <b>US$30 million</b> portfolio</li>
-          <li>Managed a team of <b>400 people</b> delivering services from business requirements to production support and call centre, consistently achieving an Employee Satisfaction Score above 4 (out of 5), above the Business Unit average</li>
-          <li>Consistently achieved a Customer Satisfaction Score above 3.8 (out of 5), above the Business Unit average</li>
-          <li>Consistently achieved <b>&gt;95% operational compliance</b> (forecast accuracy, invoicing and contract management, span of control, reserves maintenance) despite the size of the engagement</li>
-          <li>Streamlined reporting at project, program and executive level</li>
-          <li>Established an <b>Account Governance framework</b> with both customer and internal teams</li>
-          <li><b>Zero escalations</b> on delivery and relationship</li>
-          <li>Managed <b>60+ customer stakeholders</b> simultaneously</li>
-          <li>Conducted Women Empowerment events, both internal to the organisation and for customers</li>
-          <li>Taught Applied Science and Robotics to middle school children as part of STEM education volunteering</li>
-          <li>Organised and presented <b>7 workshops and roadshows</b> on Digital, Agile, DevOps, Offshoring and RPA</li>
-          <li>Conducted hackathons on <b>Blockchain</b> with Trade Finance and Distributed Ledger themes</li>
-          <li>Provided an automation solution to <b>save up to $10 million</b> on a migration activity</li>
-          <li>Provided a new operating model and delivery model that moved time to market from annual to quarterly, with a <b>30% reduction in cost of operations</b> and improved SLAs</li>
-          <li>Completed an AU$100 million IT Operations assessment with proposed <b>cost savings of 25–45%</b> through various models and levers</li>
-        </ul>
-      </div>
-    </details>
+### Delivery / Operations
+- Design and delivery of Australia’s first voice app and the Virtual Power Plant platform
+- Led teams managing delivery and operations of **150+ applications** for a large global bank
+- Decreased time to market from 18 months to **quarterly** through Agile and DevOps
+- Automation of IT Risk Management and metrics for proactive monitoring
 
-    <details class="job">
-      <summary>
-        <span class="co">Cognizant Technology Solutions Corp, USA</span><span class="when">May 2005 – Jul 2011</span>
-        <span class="title">Technical Lead, Architect, PM, Banking and Financial Services</span>
-        <span class="meta">Reported to: Account/Delivery Manager · Direct/indirect reports: 5–40 · Customer: JPMorgan Chase, Private Banking</span>
-      </summary>
-      <div class="body">
-        <p class="tech"><b>Technologies:</b> J2EE, C++, IBM suite of applications, VB.NET, Visual Basic, C#, Unix, FIX Protocol, Business Objects.</p>
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Business analysis, requirement analysis and gathering</li>
-          <li>Solution design, development and testing</li>
-          <li>Release management, deployment support and management</li>
-          <li>Distributed team delivery planning and management</li>
-          <li>Testing support and level 2/3 application support</li>
-          <li>Development at all tiers of the applications</li>
-          <li>Project planning, tracking, management and delivery</li>
-          <li>360° stakeholder management</li>
-        </ul>
-        <h4>Notable Outcomes</h4>
-        <ul>
-          <li>End-to-end development and implementation of a trading system and 4 supporting systems</li>
-          <li>Complete <b>re-write of the trading system from client-server Visual Basic to a 3-tier web-based system</b>, with straight-through processing, contextual search, excellent user experience, full trade life-cycle and comprehensive reporting</li>
-          <li>Built middleware <b>C++ processes for FIX messaging and real-time trading</b> with push technology</li>
-          <li><b>Deployment and release automation</b> across 5 regions</li>
-          <li>Complete revamp of the client mandate and portfolio management system</li>
-          <li>Managed a large <b>integration program of 150+ applications</b>, in 3 phases over 3 years, as part of a major merger</li>
-          <li>As solution consultant, designed end-to-end application architecture, including STP, search and real-time publishing solutions</li>
-          <li>Managed <b>a team of 35</b>, including customer teams</li>
-          <li>Considered an <b>SME</b> by both customer and business</li>
-          <li>Established automation and processes for release and deployment management; automated unit testing using JUnit</li>
-        </ul>
-        <h4>Key Learning</h4>
-        <ul>
-          <li>Started as a Visual Basic programmer and quickly scaled up to J2EE to revamp legacy systems</li>
-          <li>Early in the migration, moved some untested code to production, corrupting data; this led to putting the right testing and validation processes in place, and the rest of the migration was executed successfully</li>
-          <li>Stakeholder management at various levels and across teams</li>
-          <li>A key learning period for stepping into the next role as Account Manager</li>
-        </ul>
-      </div>
-    </details>
+### Financials
+- Full P&L accountability of **US$30 million** with **15–20% growth**, exceeding both top and bottom line, with 100% operational compliance across all financial parameters
+- Structured and managed deals with innovative financial modelling of up to **AU$100 million**
+- **30% operational cost reduction** through operating model changes
 
-    <details class="job">
-      <summary>
-        <span class="co">Cognizant Technology Solutions Corp, India</span><span class="when">Feb 2000 – Apr 2005</span>
-        <span class="title">Developer, Project/Team Lead, Banking and Financial Services</span>
-        <span class="meta">Reported to: Delivery Manager · Direct/indirect reports: 5–10 · Customers: Sallie Mae, Washington Mutual, Duty Free Shops, Marks &amp; Spencer, First Data</span>
-      </summary>
-      <div class="body">
-        <p class="tech"><b>Technologies:</b> Visual Basic, ASP, COM, COM+, Java, J2EE, Crystal Reports, Business Objects, WebSphere Portal, Rational Tools, HTML, JavaScript, CSS, XML, MQ Series, Perl, Oracle, UNIX, MS SQL Server.</p>
-        <h4>Responsibilities</h4>
-        <ul>
-          <li>Business analysis, requirement analysis and gathering</li>
-          <li>Solution design, development and testing; user interface design</li>
-          <li>Release management, deployment support and management</li>
-          <li>Distributed team delivery planning and management</li>
-          <li>Testing support and level 2/3 application support</li>
-          <li>Development at all tiers of the applications</li>
-        </ul>
-        <h4>Notable Outcomes</h4>
-        <ul>
-          <li>Developed a <b>Perl-based ETL program</b> that was <b>5x faster</b> than the existing ETL</li>
-          <li>Designed and developed Cognizant’s <b>first multilingual e-commerce website</b>, including content and template management so users could directly manage content for various languages</li>
-          <li>Migration of the payment evaluation and credit risk calculation system to a new version of Total System</li>
-          <li>Developed the first internal suite of <b>Knowledge Management Systems</b> and framework, adopted across <b>20 customers</b> within the organisation</li>
-        </ul>
-        <h4>Key Learning</h4>
-        <ul>
-          <li>Project management and stakeholder management</li>
-          <li>New technology in every project and customer</li>
-        </ul>
-      </div>
-    </details>
-  </section>
+## Experience
 
-  <section id="education">
-    <h2 class="sec-title">Education</h2>
-    <div class="card edu">
-      <p><b>Post Graduate in Computer Applications</b><small>National Institute of Information Technology</small></p>
-      <p style="margin:0"><b>Bachelor’s in Mathematics, Statistics and Computer Science</b><small>MS University, India</small></p>
-    </div>
-  </section>
+### David Jones, Australia | Jun 2023 – Aug 2024
+**Head of Technology**  
+*Reported to: CTO · Direct/indirect reports: 60*
 
-  <section id="competencies">
-    <h2 class="sec-title">Core Competencies</h2>
-    <div class="cards comp">
-      <article class="card">
-        <h3>Domain / Methodology</h3>
-        <ul class="chips">
-          <li>Energy Markets</li><li>Energy Trading</li><li>Distributed Energy</li><li>New Energy</li><li>Investment and Private Banking</li><li>Asset and Wealth Management</li><li>Banking</li><li>Agile and Scrum</li><li>Waterfall</li><li>CI/CD</li><li>DevOps</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Technology</h3>
-        <ul class="chips">
-          <li>Cloud Services</li><li>Machine Learning</li><li>RPA</li><li>Enterprise, Platform and Solution Architecture</li><li>Data &amp; Analytics</li><li>Event-driven architecture</li><li>Digital Twins</li><li>MLOps</li><li>Infrastructure as Code</li><li>Test Automation</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Leadership</h3>
-        <ul class="chips">
-          <li>Diverse Distributed High Performing Team Building</li><li>Stakeholder Management</li><li>Vendor Management</li><li>Partnerships</li><li>Project and Program Management</li><li>P&amp;L Management</li><li>Strategy</li><li>Coaching and Mentoring</li><li>IT Risk Management</li>
-        </ul>
-      </article>
-    </div>
-  </section>
+#### Accountabilities and Responsibilities
+- Build the technology roadmap and vision
+- Scale the team and delivery (10x)
+- Architectural and design decisions
+- People management, recruitment, coaching and mentoring
 
-  <section id="companies">
-    <h2 class="sec-title">Companies</h2>
-    <div class="card">
-      <ul class="chips">
-        <li>Ferocia</li><li>AGL Energy</li><li>Cognizant Technology Solutions (Australia, India, USA)</li><li>JP Morgan Chase</li><li>Sallie Mae</li><li>Providian Financials</li><li>Duty Free Shop</li><li>First Data</li><li>Metlife</li><li>Bankwest</li><li>Computershare</li><li>ADP Australia</li>
-      </ul>
-    </div>
-  </section>
+#### Notable Outcomes
+- Delivered full NPP-PayTo capability; first bank to implement it in Australia
+- Delivered password-less login capability
 
-</main>
+### Ferocia Private Limited, Australia | Nov 2021 – Apr 2023
+**Head of Product and Technology**  
+*Reported to: CEO · Direct/indirect reports: 20*
 
-<footer class="wrap">
-  <span>© <span id="yr">2026</span> Meera Shanaaz Aneez</span>
-  <span>References on request</span>
-</footer>
+#### Accountabilities and Responsibilities
+- Create the product and technology roadmap and vision for Bendigo Bank Internet and Mobile Banking
+- Scale the team and delivery (10x)
+- Migrate the application from on-prem to cloud
+- Establish ways of working across large enterprise and start-up teams
+- Shorten deployment cycle time and increase customer value drops
+- Architectural and design decisions
+- People management, recruitment, coaching and mentoring
 
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  // Expand all roles when printing, restore afterwards
-  var opened = [];
-  window.addEventListener('beforeprint', function(){
-    opened = [];
-    document.querySelectorAll('details.job').forEach(function(d,i){ if(!d.open){ opened.push(i); d.open = true; } });
-  });
-  window.addEventListener('afterprint', function(){
-    var all = document.querySelectorAll('details.job');
-    opened.forEach(function(i){ all[i].open = false; });
-  });
+#### Notable Outcomes
+- Defined a clear product vision, roadmap and OKRs for FY23, and delivered to them
+- Established engineering teams and delivery squads to deliver to the OKRs
+- Promoted 2 Senior Engineers to Engineering Managers, with the right support for them to grow
+- Coached and promoted Product Leadership from within
+- Improved Team Health from 7.0 to 8.4 within 8 months
+- Delivered full NPP-PayTo capability; first bank to implement it in Australia
+- Delivered password-less login capability
+
+### AGL Energy, Melbourne, Australia | Aug 2017 – Jun 2021
+**Development and Solution Design Manager / Senior Manager, Platform Architecture**  
+*Reported to: GM Integrated Energy Technology · Direct/indirect reports: 10–25*  
+**Technologies:** Voice Apps (Alexa, Google), Azure, Serverless Computing, Event-based architecture, Microsoft Data Warehouse, Azure ML, DevOps, Infrastructure as Code (Terraform, ARM), Azure DevOps, Data Explorer, Stream Analytics, Data Factory, Event Hub, AKS.
+
+#### Accountabilities and Responsibilities
+- Establish architecture, BA and development teams and software engineering disciplines
+- Effective definition and delivery of architecture and solutions
+- Understand both the technology and the business functions of services; guide and advise business and IT stakeholders
+- Develop and deliver the overall functional roadmaps in collaboration with Value Stream Leads, Program Managers, Product Teams and Business teams
+- Represent the business process owner in all underlying IT processes which enable or support business solutions in the portfolio
+- Overall technology direction of the relevant IT solutions, suitability for meeting business objectives, and ongoing support and development progression
+- Project and program estimation, business case building, technology and architecture roadmaps
+- IT platform risk management
+- Drive innovation across the business unit: evaluate emerging technologies, hackathons, PoCs and pilots
+- Cost optimisation through economies of scale, cloud optimisation, re-use and optimal technology selection
+- Contribution to the annual budgeting process
+
+#### Notable Outcomes
+- Led and defined the architectural and **capability roadmap**
+- Defined the **Product Model architecture** and solution, from ideation to execution, for the New Energy business
+- Successful mobilisation, design, delivery and 24-month strategic direction of **AGL’s Virtual Power Plant**
+- **Machine Learning platform** evaluation through simultaneous Proofs of Concept across AWS, Azure and Google Cloud
+- Established a continuous shaping process to enable a manageable **flow of work**
+- Achieved **50/50 gender diversity**
+- Led the creation of the **architecture roadmap** for AGL’s Integrated Energy, with 3 large programs in flight covering about 60 applications, used as the blueprint for all technical solutions and designs
+- Developed an **automated risk management** framework for proactive risk monitoring across the platform
+- Identified around **AU$3 million in savings** through re-use, cloud optimisation and governance
+
+### Cognizant Technology Solutions Ltd, Australia and USA | Aug 2011 – Jul 2017
+**Senior Account and Delivery Manager, Banking and Financial Services**  
+*Reported to: Head of Banking and Financial Services · Direct/indirect reports: 10–400*
+
+#### Accountabilities and Responsibilities
+- Managing multiple global distributed Banking and Financial Services customers
+- Planning and budgeting; **pricing negotiations** and contract management
+- Account financial management: budgeting, forecasting, top-line and bottom-line management, cost optimisation and monitoring
+- Solution consulting, RFI and RFP response creation and management, bid management
+- Strategic account planning and tracking; pre-sales and account mining
+- Build, expand and diversify services and relationships
+- **Delivery management**, including stakeholder management and executive reporting
+- People, career and team management, with regular performance reviews, goal setting, coaching and mentoring
+- Internal practice development strategy
+
+#### Notable Outcomes
+- Consistently achieved **15–20% growth** in both top line and bottom line
+- Delivered about **US$3 million of value-added** services annually out of a **US$30 million** portfolio
+- Managed a team of **400 people** delivering services from business requirements to production support and call centre, consistently achieving an Employee Satisfaction Score above 4 (out of 5), above the Business Unit average
+- Consistently achieved a Customer Satisfaction Score above 3.8 (out of 5), above the Business Unit average
+- Consistently achieved **>95% operational compliance** (forecast accuracy, invoicing and contract management, span of control, reserves maintenance) despite the size of the engagement
+- Streamlined reporting at project, program and executive level
+- Established an **Account Governance framework** with both customer and internal teams
+- **Zero escalations** on delivery and relationship
+- Managed **60+ customer stakeholders** simultaneously
+- Conducted Women Empowerment events, both internal to the organisation and for customers
+- Taught Applied Science and Robotics to middle school children as part of STEM education volunteering
+- Organised and presented **7 workshops and roadshows** on Digital, Agile, DevOps, Offshoring and RPA
+- Conducted hackathons on **Blockchain** with Trade Finance and Distributed Ledger themes
+- Provided an automation solution to **save up to $10 million** on a migration activity
+- Provided a new operating model and delivery model that moved time to market from annual to quarterly, with a **30% reduction in cost of operations** and improved SLAs
+- Completed an AU$100 million IT Operations assessment with proposed **cost savings of 25–45%** through various models and levers
+
+### Cognizant Technology Solutions Corp, USA | May 2005 – Jul 2011
+**Technical Lead, Architect, PM, Banking and Financial Services**  
+*Reported to: Account/Delivery Manager · Direct/indirect reports: 5–40 · Customer: JPMorgan Chase, Private Banking*  
+**Technologies:** J2EE, C++, IBM suite of applications, VB.NET, Visual Basic, C#, Unix, FIX Protocol, Business Objects.
+
+#### Responsibilities
+- Business analysis, requirement analysis and gathering
+- Solution design, development and testing
+- Release management, deployment support and management
+- Distributed team delivery planning and management
+- Testing support and level 2/3 application support
+- Development at all tiers of the applications
+- Project planning, tracking, management and delivery
+- 360° stakeholder management
+
+#### Notable Outcomes
+- End-to-end development and implementation of a trading system and 4 supporting systems
+- Complete **re-write of the trading system from client-server Visual Basic to a 3-tier web-based system**, with straight-through processing, contextual search, excellent user experience, full trade life-cycle and comprehensive reporting
+- Built middleware **C++ processes for FIX messaging and real-time trading** with push technology
+- **Deployment and release automation** across 5 regions
+- Complete revamp of the client mandate and portfolio management system
+- Managed a large **integration program of 150+ applications**, in 3 phases over 3 years, as part of a major merger
+- As solution consultant, designed end-to-end application architecture, including STP, search and real-time publishing solutions
+- Managed **a team of 35**, including customer teams
+- Considered an **SME** by both customer and business
+- Established automation and processes for release and deployment management; automated unit testing using JUnit
+
+#### Key Learning
+- Started as a Visual Basic programmer and quickly scaled up to J2EE to revamp legacy systems
+- Early in the migration, moved some untested code to production, corrupting data; this led to putting the right testing and validation processes in place, and the rest of the migration was executed successfully
+- Stakeholder management at various levels and across teams
+- A key learning period for stepping into the next role as Account Manager
+
+### Cognizant Technology Solutions Corp, India | Feb 2000 – Apr 2005
+**Developer, Project/Team Lead, Banking and Financial Services**  
+*Reported to: Delivery Manager · Direct/indirect reports: 5–10 · Customers: Sallie Mae, Washington Mutual, Duty Free Shops, Marks & Spencer, First Data*  
+**Technologies:** Visual Basic, ASP, COM, COM+, Java, J2EE, Crystal Reports, Business Objects, WebSphere Portal, Rational Tools, HTML, JavaScript, CSS, XML, MQ Series, Perl, Oracle, UNIX, MS SQL Server.
+
+#### Responsibilities
+- Business analysis, requirement analysis and gathering
+- Solution design, development and testing; user interface design
+- Release management, deployment support and management
+- Distributed team delivery planning and management
+- Testing support and level 2/3 application support
+- Development at all tiers of the applications
+
+#### Notable Outcomes
+- Developed a **Perl-based ETL program** that was **5x faster** than the existing ETL
+- Designed and developed Cognizant’s **first multilingual e-commerce website**, including content and template management so users could directly manage content for various languages
+- Migration of the payment evaluation and credit risk calculation system to a new version of Total System
+- Developed the first internal suite of **Knowledge Management Systems** and framework, adopted across **20 customers** within the organisation
+
+#### Key Learning
+- Project management and stakeholder management
+- New technology in every project and customer
+
+## Education
+
+- **Post Graduate in Computer Applications**  
+  National Institute of Information Technology
+- **Bachelor’s in Mathematics, Statistics and Computer Science**  
+  MS University, India
+
+## Core Competencies
+
+### Domain / Methodology
+- Energy Markets
+- Energy Trading
+- Distributed Energy
+- New Energy
+- Investment and Private Banking
+- Asset and Wealth Management
+- Banking
+- Agile and Scrum
+- Waterfall
+- CI/CD
+- DevOps
+
+### Technology
+- Cloud Services
+- Machine Learning
+- RPA
+- Enterprise, Platform and Solution Architecture
+- Data & Analytics
+- Event-driven architecture
+- Digital Twins
+- MLOps
+- Infrastructure as Code
+- Test Automation
+
+### Leadership
+- Diverse Distributed High Performing Team Building
+- Stakeholder Management
+- Vendor Management
+- Partnerships
+- Project and Program Management
+- P&L Management
+- Strategy
+- Coaching and Mentoring
+- IT Risk Management
+
+## Companies
+
+- Ferocia
+- AGL Energy
+- Cognizant Technology Solutions (Australia, India, USA)
+- JP Morgan Chase
+- Sallie Mae
+- Providian Financials
+- Duty Free Shop
+- First Data
+- Metlife
+- Bankwest
+- Computershare
+- ADP Australia
 </script>
 
-<script>
-// PDF download: 1) fetch the ready-made PDF and save it; 2) if that fails, build a PDF from this page in the browser;
-// 3) last resort: open the print dialog (choose "Save as PDF"). Without JavaScript the link still downloads the file.
-(function(){
-  var btn=document.getElementById('dl-pdf'); if(!btn) return;
-  var FILE='Meera-Shanaaz-Aneez-CV.pdf', LIB='https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
-  var label=btn.innerHTML;
-  function busy(on,txt){ btn.style.pointerEvents=on?'none':''; btn.innerHTML=on?txt:label; }
-  function save(blob){ var u=URL.createObjectURL(blob), a=document.createElement('a'); a.href=u; a.download=FILE;
-    document.body.appendChild(a); a.click(); a.remove(); setTimeout(function(){URL.revokeObjectURL(u);},4000); }
-  function loadLib(){ return new Promise(function(res,rej){ if(window.html2pdf) return res();
-    var s=document.createElement('script'); s.src=LIB; s.onload=res; s.onerror=rej; document.head.appendChild(s); }); }
-  function fromPage(){
-    var all=document.querySelectorAll('details.job'), was=[];
-    all.forEach(function(d){ was.push(d.open); d.open=true; });
-    document.documentElement.classList.add('pdf-capture');
-    var root=document.createElement('div'); root.id='pdf-root';
-    ['header','.strip','main','footer'].forEach(function(sel){ var n=document.querySelector(sel); if(n) root.appendChild(n.cloneNode(true)); });
-    var holder=document.createElement('div'); holder.style.cssText='position:absolute;left:-10000px;top:0;width:794px';
-    holder.appendChild(root); document.body.appendChild(holder);
-    return loadLib().then(function(){
-      return html2pdf().set({margin:[8,0,8,0],filename:FILE,image:{type:'jpeg',quality:.95},
-        html2canvas:{scale:2,useCORS:true,backgroundColor:'#ffffff',scrollX:0,scrollY:0},
-        jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},pagebreak:{mode:['css','legacy'],avoid:['.card','h4','li']}})
-        .from(root).save();
-    }).finally(function(){
-      holder.remove();
-      document.documentElement.classList.remove('pdf-capture');
-      all.forEach(function(d,i){ d.open=was[i]; });
+  <script>
+    /**
+     * Markdown Resume Parser & Renderer
+     */
+    function parseInline(text) {
+      if (!text) return '';
+      return text
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/\*\*(.+?)\*\*/g, '<b>$1</b>')
+        .replace(/__(.+?)__/g, '<b>$1</b>')
+        .replace(/\*([^\*]+?)\*/g, '<em>$1</em>')
+        .replace(/_([^_]+?)_/g, '<em>$1</em>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, function (match, label, href) {
+          var isExt = /^https?:\/\//i.test(href);
+          return '<a href="' + href + '"' + (isExt ? ' target="_blank" rel="noopener"' : '') + '>' + label + '</a>';
+        })
+        .replace(/`([^`]+)`/g, '<code>$1</code>');
+    }
+
+    function parseFrontmatter(md) {
+      var meta = {
+        name: 'Meera Shanaaz Aneez',
+        role: 'Technology Leader',
+        photo: 'photo.jpg',
+        email: '',
+        phone: '',
+        linkedin: '',
+        linkedin_label: '',
+        pdf: 'Meera-Shanaaz-Aneez-CV.pdf',
+        strip: []
+      };
+
+      var fmMatch = md.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+      var body = md;
+      if (fmMatch) {
+        body = md.slice(fmMatch[0].length);
+        var lines = fmMatch[1].split(/\r?\n/);
+        var currentKey = null;
+        var inList = false;
+
+        lines.forEach(function (line) {
+          var trimmed = line.trim();
+          if (!trimmed || trimmed.startsWith('#')) return;
+
+          var kvMatch = line.match(/^([a-zA-Z0-9_-]+)\s*:\s*(.*)$/);
+          if (kvMatch) {
+            currentKey = kvMatch[1].toLowerCase();
+            var val = kvMatch[2].trim().replace(/^["']|["']$/g, '');
+            if (val === '') {
+              inList = true;
+              if (!meta[currentKey]) meta[currentKey] = [];
+            } else {
+              inList = false;
+              meta[currentKey] = val;
+            }
+          } else if (inList && currentKey && trimmed.startsWith('-')) {
+            var itemVal = trimmed.replace(/^-\s*/, '').replace(/^["']|["']$/g, '');
+            if (Array.isArray(meta[currentKey])) {
+              meta[currentKey].push(itemVal);
+            }
+          }
+        });
+      }
+
+      return { meta: meta, body: body };
+    }
+
+    function renderResume(markdown) {
+      var parsed = parseFrontmatter(markdown);
+      var meta = parsed.meta;
+      var body = parsed.body;
+
+      // Dynamically update document title
+      if (meta.name && meta.role) {
+        document.title = meta.name + ' — ' + meta.role;
+      }
+
+      // 1. Header Hero
+      var headerHtml = '<header>\n' +
+        '  <div class="wrap hero">\n' +
+        '    <img src="' + (meta.photo || 'photo.jpg') + '" alt="Photo of ' + meta.name + '" width="132" height="132">\n' +
+        '    <div>\n' +
+        '      <h1>' + parseInline(meta.name) + '</h1>\n' +
+        '      <p class="role">' + parseInline(meta.role) + '</p>\n' +
+        '      <ul class="contact">\n' +
+        (meta.email ? '        <li><span aria-hidden="true">✉</span><a href="mailto:' + meta.email + '">' + meta.email + '</a></li>\n' : '') +
+        (meta.phone ? '        <li><span aria-hidden="true">☏</span><a href="tel:' + meta.phone.replace(/[\s-]/g, '') + '">' + meta.phone + '</a></li>\n' : '') +
+        (meta.linkedin ? '        <li><span aria-hidden="true">in</span><a href="' + meta.linkedin + '" rel="noopener" target="_blank">' + (meta.linkedin_label || meta.linkedin.replace(/^https?:\/\/(www\.)?/, '')) + '</a></li>\n' : '') +
+        '      </ul>\n' +
+        (meta.pdf ? '      <a class="dl" id="dl-pdf" href="' + meta.pdf + '" download="' + meta.pdf + '">&#8681; Download CV (PDF)</a>\n' : '') +
+        '    </div>\n' +
+        '  </div>\n' +
+        '</header>';
+
+      // 2. Strip
+      var stripHtml = '';
+      if (meta.strip && meta.strip.length) {
+        stripHtml = '<div class="strip">\n  <div class="wrap">\n    <ul>\n' +
+          meta.strip.map(function (s) { return '      <li>' + parseInline(s) + '</li>'; }).join('\n') +
+          '\n    </ul>\n  </div>\n</div>';
+      }
+
+      // 3. Sections
+      var rawSections = body.split(/\n(?=##\s+)/);
+      var summaryHtml = '';
+      var highlightsHtml = '';
+      var experienceHtml = '';
+      var educationHtml = '';
+      var competenciesHtml = '';
+      var companiesHtml = '';
+
+      rawSections.forEach(function (secText) {
+        var trimmed = secText.trim();
+        if (!trimmed) return;
+        var headerMatch = trimmed.match(/^##\s+(.*)/);
+        var secTitle = headerMatch ? headerMatch[1].trim() : '';
+        var contentWithoutHeader = headerMatch ? trimmed.slice(headerMatch[0].length).trim() : trimmed;
+        var lowerTitle = secTitle.toLowerCase();
+
+        if (lowerTitle.includes('summary')) {
+          var paras = contentWithoutHeader.split(/\n\s*\n/).filter(Boolean);
+          summaryHtml = paras.map(function (p) {
+            return '<p class="summary">' + parseInline(p.trim()) + '</p>';
+          }).join('\n');
+        } else if (lowerTitle.includes('highlight')) {
+          var cardBlocks = contentWithoutHeader.split(/\n(?=###\s+)/);
+          var cards = cardBlocks.map(function (cardText, idx) {
+            var cMatch = cardText.trim().match(/^###\s+(.*)/);
+            if (!cMatch) return '';
+            var cardTitle = cMatch[1].trim();
+            var cardBody = cardText.trim().slice(cMatch[0].length).trim();
+            var items = cardBody.split(/\n/).filter(function (l) {
+              return l.trim().startsWith('-');
+            }).map(function (l) {
+              return l.trim().replace(/^-\s*/, '');
+            });
+            var isWide = cardTitle.toLowerCase().includes('financial') || (idx === cardBlocks.length - 1 && (cardBlocks.length % 2 === 1));
+            return '      <article class="card' + (isWide ? ' wide' : '') + '">\n' +
+              '        <h3>' + parseInline(cardTitle) + '</h3>\n' +
+              '        <ul class="tick">\n' +
+              items.map(function (it) { return '          <li>' + parseInline(it) + '</li>'; }).join('\n') +
+              '\n        </ul>\n      </article>';
+          }).filter(Boolean);
+
+          highlightsHtml = '<section id="highlights">\n' +
+            '    <h2 class="sec-title">' + parseInline(secTitle) + '</h2>\n' +
+            '    <div class="cards">\n' + cards.join('\n') + '\n    </div>\n  </section>';
+        } else if (lowerTitle.includes('experience')) {
+          var jobBlocks = contentWithoutHeader.split(/\n(?=###\s+)/);
+          var jobs = jobBlocks.map(function (jobText, idx) {
+            var jMatch = jobText.trim().match(/^###\s+(.*)/);
+            if (!jMatch) return '';
+            var headerLine = jMatch[1].trim();
+            var company = headerLine;
+            var when = '';
+
+            if (headerLine.includes('|')) {
+              var parts = headerLine.split('|');
+              company = parts[0].trim();
+              when = parts.slice(1).join('|').trim();
+            } else if (headerLine.includes('—')) {
+              var pDash = headerLine.split('—');
+              company = pDash[0].trim();
+              when = pDash.slice(1).join('—').trim();
+            }
+
+            var remainingLines = jobText.trim().slice(jMatch[0].length).trim().split(/\n/);
+            var title = '';
+            var metaLine = '';
+            var techLine = '';
+            var subsections = [];
+            var curSub = null;
+
+            for (var i = 0; i < remainingLines.length; i++) {
+              var line = remainingLines[i].trim();
+              if (!line) continue;
+
+              if (line.startsWith('####')) {
+                var subTitle = line.replace(/^####\s*/, '').trim();
+                curSub = { title: subTitle, items: [] };
+                subsections.push(curSub);
+                continue;
+              }
+
+              if (curSub && line.startsWith('-')) {
+                curSub.items.push(line.replace(/^-\s*/, ''));
+                continue;
+              }
+
+              if (line.match(/^(\*\*Technologies:?\*\*|Technologies:)/i)) {
+                techLine = line.replace(/^(\*\*Technologies:?\*\*|Technologies:)\s*/i, '').trim();
+                continue;
+              }
+
+              if (!title && line.includes('**')) {
+                var boldMatch = line.match(/\*\*(.+?)\*\*/);
+                if (boldMatch) {
+                  title = boldMatch[1].trim();
+                  var rest = line.slice(boldMatch[0].length).replace(/^[\s\|—–]+/, '').trim();
+                  if (rest && !when) when = rest;
+                }
+                continue;
+              }
+
+              if (line.startsWith('*') && line.endsWith('*') || line.includes('Reported to:')) {
+                metaLine = line.replace(/^\*+|\*+$/g, '').trim();
+                continue;
+              }
+            }
+
+            return '    <details class="job"' + (idx === 0 ? ' open' : '') + '>\n' +
+              '      <summary>\n' +
+              '        <span class="co">' + parseInline(company) + '</span><span class="when">' + parseInline(when) + '</span>\n' +
+              '        <span class="title">' + parseInline(title) + '</span>\n' +
+              (metaLine ? '        <span class="meta">' + parseInline(metaLine) + '</span>\n' : '') +
+              '      </summary>\n' +
+              '      <div class="body">\n' +
+              (techLine ? '        <p class="tech"><b>Technologies:</b> ' + parseInline(techLine) + '</p>\n' : '') +
+              subsections.map(function (sub) {
+                return '        <h4>' + parseInline(sub.title) + '</h4>\n        <ul>\n' +
+                  sub.items.map(function (it) { return '          <li>' + parseInline(it) + '</li>'; }).join('\n') +
+                  '\n        </ul>';
+              }).join('\n') +
+              '\n      </div>\n    </details>';
+          }).filter(Boolean);
+
+          experienceHtml = '<section id="experience">\n    <h2 class="sec-title">' + parseInline(secTitle) + '</h2>\n' +
+            jobs.join('\n\n') + '\n  </section>';
+        } else if (lowerTitle.includes('education')) {
+          var lines = contentWithoutHeader.split(/\n/).filter(function (l) { return l.trim(); });
+          var eduItems = [];
+          var curItem = null;
+
+          lines.forEach(function (l) {
+            var trimmedLine = l.trim();
+            if (trimmedLine.startsWith('-')) {
+              var itemContent = trimmedLine.replace(/^-\s*/, '');
+              var boldMatch = itemContent.match(/\*\*(.+?)\*\*/);
+              if (boldMatch) {
+                var degree = boldMatch[1];
+                var institution = itemContent.slice(boldMatch[0].length).replace(/^[\s—–-]+/, '').trim();
+                curItem = { degree: degree, institution: institution };
+                eduItems.push(curItem);
+              } else {
+                curItem = { degree: itemContent, institution: '' };
+                eduItems.push(curItem);
+              }
+            } else if (curItem && !curItem.institution) {
+              curItem.institution = trimmedLine;
+            }
+          });
+
+          educationHtml = '<section id="education">\n    <h2 class="sec-title">' + parseInline(secTitle) + '</h2>\n' +
+            '    <div class="card edu">\n' +
+            eduItems.map(function (item, idx) {
+              return '      <p' + (idx === eduItems.length - 1 ? ' style="margin:0"' : '') + '><b>' + parseInline(item.degree) + '</b>' +
+                (item.institution ? '<small>' + parseInline(item.institution) + '</small>' : '') + '</p>';
+            }).join('\n') +
+            '\n    </div>\n  </section>';
+        } else if (lowerTitle.includes('competenc')) {
+          var compBlocks = contentWithoutHeader.split(/\n(?=###\s+)/);
+          var compCards = compBlocks.map(function (block) {
+            var cMatch = block.trim().match(/^###\s+(.*)/);
+            if (!cMatch) return '';
+            var catTitle = cMatch[1].trim();
+            var items = block.trim().slice(cMatch[0].length).trim().split(/\n/)
+              .filter(function (l) { return l.trim().startsWith('-'); })
+              .map(function (l) { return l.trim().replace(/^-\s*/, ''); });
+
+            return '      <article class="card">\n' +
+              '        <h3>' + parseInline(catTitle) + '</h3>\n' +
+              '        <ul class="chips">\n' +
+              items.map(function (it) { return '          <li>' + parseInline(it) + '</li>'; }).join('\n') +
+              '\n        </ul>\n      </article>';
+          }).filter(Boolean);
+
+          competenciesHtml = '<section id="competencies">\n    <h2 class="sec-title">' + parseInline(secTitle) + '</h2>\n' +
+            '    <div class="cards comp">\n' + compCards.join('\n') + '\n    </div>\n  </section>';
+        } else if (lowerTitle.includes('compan')) {
+          var companies = contentWithoutHeader.split(/\n/)
+            .filter(function (l) { return l.trim().startsWith('-'); })
+            .map(function (l) { return l.trim().replace(/^-\s*/, ''); });
+
+          companiesHtml = '<section id="companies">\n    <h2 class="sec-title">' + parseInline(secTitle) + '</h2>\n' +
+            '    <div class="card">\n      <ul class="chips">\n' +
+            companies.map(function (c) { return '        <li>' + parseInline(c) + '</li>'; }).join('\n') +
+            '\n      </ul>\n    </div>\n  </section>';
+        }
+      });
+
+      var mainHtml = '<main class="wrap">\n' +
+        '  ' + summaryHtml + '\n' +
+        '  ' + highlightsHtml + '\n' +
+        '  ' + experienceHtml + '\n' +
+        '  ' + educationHtml + '\n' +
+        '  ' + competenciesHtml + '\n' +
+        '  ' + companiesHtml + '\n' +
+        '</main>';
+
+      var footerHtml = '<footer class="wrap">\n' +
+        '  <span>© <span id="yr">' + new Date().getFullYear() + '</span> ' + parseInline(meta.name) + '</span>\n' +
+        '  <span>References on request</span>\n' +
+        '</footer>';
+
+      var appEl = document.getElementById('app');
+      appEl.innerHTML = headerHtml + '\n' + stripHtml + '\n' + mainHtml + '\n' + footerHtml;
+
+      // Re-bind PDF download handler with meta.pdf filename
+      initPdfDownload(meta.pdf || 'Meera-Shanaaz-Aneez-CV.pdf');
+    }
+
+    /**
+     * PDF Download Handler
+     */
+    function initPdfDownload(pdfFileName) {
+      var btn = document.getElementById('dl-pdf');
+      if (!btn) return;
+      var FILE = pdfFileName || 'Meera-Shanaaz-Aneez-CV.pdf';
+      var LIB = 'https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+      var label = btn.innerHTML;
+
+      function busy(on, txt) {
+        btn.style.pointerEvents = on ? 'none' : '';
+        btn.innerHTML = on ? txt : label;
+      }
+
+      function save(blob) {
+        var u = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = u;
+        a.download = FILE;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(function () { URL.revokeObjectURL(u); }, 4000);
+      }
+
+      function loadLib() {
+        return new Promise(function (res, rej) {
+          if (window.html2pdf) return res();
+          var s = document.createElement('script');
+          s.src = LIB;
+          s.onload = res;
+          s.onerror = rej;
+          document.head.appendChild(s);
+        });
+      }
+
+      function fromPage() {
+        var all = document.querySelectorAll('details.job');
+        var was = [];
+        all.forEach(function (d) { was.push(d.open); d.open = true; });
+        document.documentElement.classList.add('pdf-capture');
+        var root = document.createElement('div');
+        root.id = 'pdf-root';
+        ['header', '.strip', 'main', 'footer'].forEach(function (sel) {
+          var n = document.querySelector(sel);
+          if (n) root.appendChild(n.cloneNode(true));
+        });
+        var holder = document.createElement('div');
+        holder.style.cssText = 'position:absolute;left:-10000px;top:0;width:794px';
+        holder.appendChild(root);
+        document.body.appendChild(holder);
+
+        return loadLib().then(function () {
+          return html2pdf().set({
+            margin: [8, 0, 8, 0],
+            filename: FILE,
+            image: { type: 'jpeg', quality: 0.95 },
+            html2canvas: { scale: 2, useCORS: true, backgroundColor: '#ffffff', scrollX: 0, scrollY: 0 },
+            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak: { mode: ['css', 'legacy'], avoid: ['.card', 'h4', 'li'] }
+          }).from(root).save();
+        }).finally(function () {
+          holder.remove();
+          document.documentElement.classList.remove('pdf-capture');
+          all.forEach(function (d, i) { d.open = was[i]; });
+        });
+      }
+
+      btn.onclick = function (e) {
+        e.preventDefault();
+        busy(true, 'Preparing PDF…');
+        fetch(FILE, { cache: 'no-cache' }).then(function (r) {
+          if (!r.ok || !/pdf/i.test(r.headers.get('content-type') || '')) throw new Error('no file');
+          return r.blob();
+        }).then(save).catch(function () {
+          busy(true, 'Building PDF…');
+          return fromPage().catch(function () { window.print(); });
+        }).finally(function () {
+          busy(false);
+        });
+      };
+    }
+
+    /**
+     * Expand all roles when printing, restore afterwards
+     */
+    var printOpened = [];
+    window.addEventListener('beforeprint', function () {
+      printOpened = [];
+      document.querySelectorAll('details.job').forEach(function (d, i) {
+        if (!d.open) { printOpened.push(i); d.open = true; }
+      });
     });
-  }
-  btn.addEventListener('click',function(e){
-    e.preventDefault(); busy(true,'Preparing PDF…');
-    fetch(FILE,{cache:'no-cache'}).then(function(r){
-      if(!r.ok||!/pdf/i.test(r.headers.get('content-type')||'')) throw new Error('no file');
-      return r.blob();
-    }).then(save).catch(function(){
-      busy(true,'Building PDF…');
-      return fromPage().catch(function(){ window.print(); });
-    }).finally(function(){ busy(false); });
-  });
-})();
-</script>
+    window.addEventListener('afterprint', function () {
+      var all = document.querySelectorAll('details.job');
+      printOpened.forEach(function (i) {
+        if (all[i]) all[i].open = false;
+      });
+    });
+
+    /**
+     * Content Loader (loads content.md with fallback and live updates)
+     */
+    var currentMarkdown = '';
+
+    function loadContent() {
+      fetch('content.md', { cache: 'no-cache' })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.text();
+        })
+        .then(function (text) {
+          currentMarkdown = text;
+          renderResume(text);
+        })
+        .catch(function (err) {
+          console.warn('Could not load content.md via fetch (normal if opened directly via file://):', err);
+          var fallback = document.getElementById('fallback-md');
+          if (fallback && fallback.textContent.trim()) {
+            currentMarkdown = fallback.textContent.trim();
+            renderResume(currentMarkdown);
+          }
+          if (window.location.protocol === 'file:') {
+            var banner = document.getElementById('local-file-banner');
+            if (banner) banner.style.display = 'flex';
+          }
+        });
+    }
+
+    // Banner close handler
+    var closeBannerBtn = document.getElementById('close-banner');
+    if (closeBannerBtn) {
+      closeBannerBtn.addEventListener('click', function () {
+        var banner = document.getElementById('local-file-banner');
+        if (banner) banner.style.display = 'none';
+      });
+    }
+
+    // File picker for immediate file:// preview
+    var fileInput = document.getElementById('md-file-input');
+    if (fileInput) {
+      fileInput.addEventListener('change', function (e) {
+        var file = e.target.files && e.target.files[0];
+        if (file) {
+          var reader = new FileReader();
+          reader.onload = function (evt) {
+            currentMarkdown = evt.target.result;
+            renderResume(currentMarkdown);
+            var banner = document.getElementById('local-file-banner');
+            if (banner) banner.style.display = 'none';
+          };
+          reader.readAsText(file);
+        }
+      });
+    }
+
+    // Drag and drop markdown file onto page
+    window.addEventListener('dragover', function (e) { e.preventDefault(); });
+    window.addEventListener('drop', function (e) {
+      e.preventDefault();
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+        var file = e.dataTransfer.files[0];
+        if (file.name.endsWith('.md')) {
+          var reader = new FileReader();
+          reader.onload = function (evt) {
+            currentMarkdown = evt.target.result;
+            renderResume(currentMarkdown);
+            var banner = document.getElementById('local-file-banner');
+            if (banner) banner.style.display = 'none';
+          };
+          reader.readAsText(file);
+        }
+      }
+    });
+
+    // Auto-refresh when tab is focused if running on HTTP/HTTPS
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'visible' && window.location.protocol !== 'file:') {
+        fetch('content.md', { cache: 'no-cache' })
+          .then(function (r) { return r.ok ? r.text() : null; })
+          .then(function (txt) {
+            if (txt && txt !== currentMarkdown) {
+              currentMarkdown = txt;
+              renderResume(txt);
+            }
+          })
+          .catch(function () { });
+      }
+    });
+
+    // Initial load
+    loadContent();
+  </script>
+
 </body>
+
 </html>
