@@ -109,6 +109,47 @@ footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line);colo
   section{break-inside:auto}
   .card,.job{break-inside:avoid}
 }
+
+
+.dl{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:9px 18px;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:600;font-size:.92rem;text-decoration:none}
+.dl:hover{background:var(--warm);color:#fff}
+.dl:focus-visible{outline:3px solid var(--warm);outline-offset:2px}
+@media(max-width:600px){.dl{margin-top:14px}}
+@media print{.dl{display:none}}
+
+@media print{
+  @page{size:A4;margin:12mm}
+  body{font-size:9.5pt;line-height:1.4}
+  .wrap{max-width:none;padding:0}
+  header{padding:0 0 12px}
+  .hero{grid-template-columns:96px 1fr;gap:18px}
+  .hero img{width:96px;height:96px;box-shadow:none}
+  h1{font-size:24pt}
+  .summary{font-size:10.5pt;margin:14px 0 4px}
+  section{padding:14px 0 0}
+  .sec-title{font-size:14pt;margin-bottom:10px;break-after:avoid}
+  .cards{gap:8px}
+  .card{padding:10px 12px;box-shadow:none;border-radius:8px}
+  .card.wide ul{columns:2}
+  ul.tick li{margin:2px 0}
+  .job{box-shadow:none;break-inside:auto;margin-bottom:8px;border-radius:8px}
+  .job summary{padding:10px 14px;break-after:avoid}
+  .job .body{padding:0 14px 10px}
+  .job h4{margin:8px 0 3px;break-after:avoid}
+  .job li{margin:1px 0}
+  .job .co{font-size:11.5pt}
+  .chips{gap:4px}.chips li{padding:1px 8px;font-size:8.5pt}
+  footer{margin-top:16px;padding:10px 0 0}
+}
+
+.pdf-capture #pdf-root{width:794px;background:#fff;color:#111}
+.pdf-capture #pdf-root *{box-shadow:none!important}
+.pdf-capture #pdf-root .dl{display:none!important}
+.pdf-capture #pdf-root .wrap{max-width:none;width:100%;padding:0 28px}
+.pdf-capture #pdf-root .hero{grid-template-columns:110px 1fr}
+.pdf-capture #pdf-root .card.wide ul{columns:1}
+.pdf-capture #pdf-root #highlights .cards{grid-template-columns:repeat(2,1fr)}
+.pdf-capture #pdf-root .card,.pdf-capture #pdf-root .job{break-inside:avoid}
 </style>
 </head>
 <body>
@@ -124,6 +165,7 @@ footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line);colo
         <li><span aria-hidden="true">☏</span><a href="tel:+61432800521">+61 432 800 521</a></li>
         <li><span aria-hidden="true">in</span><a href="https://www.linkedin.com/in/meerashanaaz" rel="noopener">linkedin.com/in/meerashanaaz</a></li>
       </ul>
+      <a class="dl" id="dl-pdf" href="Meera-Shanaaz-Aneez-CV.pdf" download="Meera-Shanaaz-Aneez-CV.pdf">&#8681; Download CV (PDF)</a>
     </div>
   </div>
 </header>
@@ -459,6 +501,50 @@ footer{margin-top:56px;padding:28px 0 48px;border-top:1px solid var(--line);colo
     var all = document.querySelectorAll('details.job');
     opened.forEach(function(i){ all[i].open = false; });
   });
+</script>
+
+<script>
+// PDF download: 1) fetch the ready-made PDF and save it; 2) if that fails, build a PDF from this page in the browser;
+// 3) last resort: open the print dialog (choose "Save as PDF"). Without JavaScript the link still downloads the file.
+(function(){
+  var btn=document.getElementById('dl-pdf'); if(!btn) return;
+  var FILE='Meera-Shanaaz-Aneez-CV.pdf', LIB='https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js';
+  var label=btn.innerHTML;
+  function busy(on,txt){ btn.style.pointerEvents=on?'none':''; btn.innerHTML=on?txt:label; }
+  function save(blob){ var u=URL.createObjectURL(blob), a=document.createElement('a'); a.href=u; a.download=FILE;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(function(){URL.revokeObjectURL(u);},4000); }
+  function loadLib(){ return new Promise(function(res,rej){ if(window.html2pdf) return res();
+    var s=document.createElement('script'); s.src=LIB; s.onload=res; s.onerror=rej; document.head.appendChild(s); }); }
+  function fromPage(){
+    var all=document.querySelectorAll('details.job'), was=[];
+    all.forEach(function(d){ was.push(d.open); d.open=true; });
+    document.documentElement.classList.add('pdf-capture');
+    var root=document.createElement('div'); root.id='pdf-root';
+    ['header','.strip','main','footer'].forEach(function(sel){ var n=document.querySelector(sel); if(n) root.appendChild(n.cloneNode(true)); });
+    var holder=document.createElement('div'); holder.style.cssText='position:absolute;left:-10000px;top:0;width:794px';
+    holder.appendChild(root); document.body.appendChild(holder);
+    return loadLib().then(function(){
+      return html2pdf().set({margin:[8,0,8,0],filename:FILE,image:{type:'jpeg',quality:.95},
+        html2canvas:{scale:2,useCORS:true,backgroundColor:'#ffffff',scrollX:0,scrollY:0},
+        jsPDF:{unit:'mm',format:'a4',orientation:'portrait'},pagebreak:{mode:['css','legacy'],avoid:['.card','h4','li']}})
+        .from(root).save();
+    }).finally(function(){
+      holder.remove();
+      document.documentElement.classList.remove('pdf-capture');
+      all.forEach(function(d,i){ d.open=was[i]; });
+    });
+  }
+  btn.addEventListener('click',function(e){
+    e.preventDefault(); busy(true,'Preparing PDF…');
+    fetch(FILE,{cache:'no-cache'}).then(function(r){
+      if(!r.ok||!/pdf/i.test(r.headers.get('content-type')||'')) throw new Error('no file');
+      return r.blob();
+    }).then(save).catch(function(){
+      busy(true,'Building PDF…');
+      return fromPage().catch(function(){ window.print(); });
+    }).finally(function(){ busy(false); });
+  });
+})();
 </script>
 </body>
 </html>
