@@ -6,6 +6,8 @@ email: meera.aneez@gmail.com
 phone: "+61 432 800 521"
 linkedin: https://www.linkedin.com/in/meerashanaaz
 linkedin_label: linkedin.com/in/meerashanaaz
+github: https://github.com/meerashanaaz
+github_label: github.com/meerashanaaz
 pdf: Meera-Shanaaz-Aneez-CV.pdf
 strip:
   - Technology Transformation
@@ -15,7 +17,7 @@ strip:
   - Software Delivery and Operations
   - Building High Performing Teams
   - Coaching and Mentoring
-  - Engineering Management
+  - Engineering Leadership
 ---
 
 ## Summary
