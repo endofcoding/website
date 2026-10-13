@@ -1,6 +1,6 @@
 ---
 name: Meera Shanaaz Aneez
-role: Technology Leader
+role: Technology Leader, Chief Technology Officer
 photo: photo.jpg
 email: meera.aneez@gmail.com
 phone: "+61 432 800 521"
